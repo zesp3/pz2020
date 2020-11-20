@@ -1,2 +1,2 @@
 # pz2020
-Aplikacja 
+Aplikacja wsi Łubianka
