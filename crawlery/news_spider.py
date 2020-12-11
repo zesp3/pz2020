@@ -39,15 +39,14 @@ class NewsSpider(scrapy.Spider):
 
     def avoidPdf(self, response: scrapy.http.Response):
         try:
-            text = response.css('div.netadmin__content').get()
-            return text
+            return response.css('div.system_anchor.obiekt_akapit').get().replace("\n", "").replace("\t", "")
         except:
             url = response.url
             return url
 
     def avoidEmptyImage(self, response: scrapy.http.Response):
         try:
-            picture = "https://www.lubianka.pl/" + quote.css("div.img_src img::attr(src)").get(),
+            picture = "https://www.lubianka.pl/" + response.css("div.img_src img::attr(src)").get(),
             return picture
         except:
             return "https://www.lubianka.pl/news,obrazek,2335,wznowienie-przyjmowania-odpadow-komunalnych-do-punktu-selektywnego-zbierania-odpadow-komunalnych.png"
