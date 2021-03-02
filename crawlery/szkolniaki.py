@@ -8,5 +8,5 @@ class SzkolniakiSpider(scrapy.Spider):
     def parse(self, response):
         for q in response.css('div.galeria_grafika_box').css('a::attr(href)').getall():
             yield{
-                'link': self.start[0] + q
+                'link': self.start[0] + "/" + q
             }
