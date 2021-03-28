@@ -1,0 +1,2897 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML LANG="pl" DIR="ltr">
+<HEAD>
+<BASE href="https://www.lubianka.pl/">
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+<META NAME="description" CONTENT="Urząd Gminy Łubianka">
+<META NAME="keywords" CONTENT="urząd, gminy, Łubianka">
+<META NAME="robots" CONTENT="index,follow,archive">
+<META NAME="generator" CONTENT="netadmin v7.13 | extranet internet creator | www.extranet.pl">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
+<TITLE>Urząd Gminy Łubianka</TITLE>
+<LINK REL="manifest" HREF="manifest.webmanifest">
+<LINK REL="stylesheet" HREF="css,css/system_default.css" MEDIA="all" TYPE="text/css">
+<LINK REL="stylesheet" HREF="css,css/print.css" MEDIA="print" TYPE="text/css">
+<LINK REL="stylesheet" HREF="https://www.lubianka.pl/css,skory/default/style.css" MEDIA="all" TYPE="text/css">
+<LINK REL="icon" HREF="https://www.lubianka.pl/favicon.ico" TYPE="image/x-icon">
+<LINK REL="search" HREF="https://www.lubianka.pl/redir,opensearch?jezyk=1" TYPE="application/opensearchdescription+xml">
+<LINK REL="home" HREF="https://www.lubianka.pl/">
+<LINK REL="stylesheet" HREF="css,js/fancybox3/jquery.fancybox.min.css" MEDIA="all" TYPE="text/css">
+<LINK REL="stylesheet" HREF="css,js/datatables/jquery.datatables.css" MEDIA="all" TYPE="text/css">
+<LINK REL="stylesheet" HREF="css,js/bootstrap-datetimepicker/bootstrap-datetimepicker.css" MEDIA="all" TYPE="text/css">
+<LINK REL="stylesheet" HREF="css,webfonts/system-font/css/system-icons.css" MEDIA="all" TYPE="text/css">
+<LINK REL="stylesheet" HREF="css,webfonts/system-font/css/system-icons-codes.css" MEDIA="all" TYPE="text/css">
+<LINK REL="image_src" HREF="https://www.lubianka.pl/jpg,skory/site_thumb.jpg">
+<LINK REL="stylesheet" HREF="css,skory/js/malihu-custom-scrollbar/jquery.mCustomScrollbar-STRICT.css" MEDIA="screen" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="redir,load_javascripts"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="js,skory/js/enquire.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="js,skory/js/jquery.carouFredSel-6.2.1-packed.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="js,skory/js/jquery.touchSwipe.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="js,skory/js/malihu-custom-scrollbar/jquery.mousewheel.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="js,skory/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript"><!--//--><![CDATA[//><!--
+$.fn.dataTableExt.oSort['string-asc']=function(x,y) { return x.toString().localeCompare(y.toString()); };
+$.fn.dataTableExt.oSort['string-desc']=function(x,y) { return y.toString().localeCompare(x.toString()); };
+function dataTablesInit(selector){
+	var counter=0;
+	var objectsTable=new Array;
+	$(selector).each(function(){
+		var isSort = $(this).is('.sortuj,.sortable');
+		var isSzukaj = $(this).hasClass('szukaj');
+		var isWszystko = $(this).hasClass('wszystko');
+		if ($('thead th.sortasc, thead th.sortdesc', this).length==0) {
+			_order=[];
+		} else {
+			_order=[
+				[
+					($('thead th.sortasc, thead th.sortdesc', this).index()),
+					(($('thead th.sortdesc', this).length==0) ? 'asc' : 'desc')
+				]
+			];
+		}
+		objRef=$(this).DataTable({
+			'oLanguage': {
+				'sUrl': './js/datatables/lang/1.txt'
+			},
+			'responsive': true,
+			'bSortClasses': false,
+			'bPaginate': !isWszystko,
+			'iDisplayLength': isWszystko ? -1 : 25,
+			'bInfo': false,
+			'bFilter': isSzukaj,
+			'sDom': 'Rlfrtip',
+			'bSort': isSort,
+			'order': _order,
+			'stateSave': true,
+			'fnDrawCallback': function(oSettings, json) {
+				// wyłączenie sortowania/wyszukiwania dla kolumn <th> z klasą nosort/nosearch
+				$(this).find('thead th').each( function (key, value) {
+					if ($(this).hasClass('nosort')) {
+						oSettings.aoColumns[key].bSortable=false;
+						$(this).removeClass(oSettings.oClasses.sSortAsc+' '+oSettings.oClasses.sSortDesc+' '+oSettings.aoColumns[key].sSortingClass);
+						$(this).addClass( oSettings.oClasses.sSortableNone );
+					}
+					if ($(this).hasClass('nosearch')) {
+						oSettings.aoColumns[key].bSearchable=false;
+					}
+				} );
+			}
+		});
+		objectsTable[counter]=objRef;
+		counter++;
+	});
+	return objectsTable;
+}
+window.onload = function(e) { 
+$('#externalobject_22').html('<iframe width="1080" height="350" src="https://www.youtube.com/embed/GxurvdHpG0U" frameborder="0" allowfullscreen title="Film promocyjny"><'+'/iframe>');
+ }
+//--><!]]></SCRIPT>
+<STYLE TYPE="text/css">
+<!--/*--><![CDATA[/*><!--*/
+#cookie_info_box{ position:fixed; bottom:0; left:0; z-index:10000; width:100%; background:#000; box-shadow:0 2px 2px -2px #000; font-size:9px; color:#fff !important; font-family:arial,sans; opacity:0.8;}#cookie_info_box a{ color:#fff !important; text-decoration:underline !important;}#cookie_info_box a, #cookie_info_box a *{ background-color:transparent;}#cookie_info_close{ font-style:normal; text-decoration:none;}#cookie_info_box2{ color:#fff !important;}#cookie_info_box .hide{ display:none;}
+html,body { font-size: 16px; }
+
+                    .kalendarium_wydarzenie-wykaz-pozycja {
+                        width: 33.3333%;
+                        box-sizing: border-box;
+                        padding: 10px;
+                        float: left;
+                        display: block;
+                    }
+
+                    .kalendarium_wydarzenie-wykaz-pozycja a {
+                        height: 20em;
+                        background-color: #eaeaea;
+                        background-color: rgba(0, 0, 0, 0.05);
+                        background-image: url('jpg,skory/site_thumb.jpg');
+                    }
+
+                    .kalendarium_wydarzenie-wykaz-link-box {
+                        position: absolute;
+                        background-color: #000;
+                        background-color: rgba(0, 0, 0, 0.7);
+                    }
+
+                    .kalendarium_obrazek {
+                        position: relative;
+                        background-image: url('../jpg,skory/site_thumb.jpg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .kalendarium_obrazek_a {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+
+                    .kalendarium_wydarzeniecol {
+                        background-color: #000;
+                        background-color: rgba(0, 0, 0, 0.56);
+                        max-width: 300px;
+                        min-height: 400px;
+                    }
+
+                    .kalendarium_linki li {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        max-width: 300px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+
+                        .kalendarium_wykaz_wydarzen .kalendarium_wydarzenie-wykaz-pozycja {
+                            width: 50%;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 568px) {
+
+                        .kalendarium_wyszukiwarka input {
+                            width: auto !important;
+                        }
+
+                        .kalendarium_wydarzenie-wykaz-pozycja {
+                            width: auto;
+                            float: none;
+                        }
+
+                        .kalendarium_obrazek {
+                            background: transparent !important;
+                        }
+
+                        .kalendarium_obrazek_a {
+                            display: none;
+                        }
+
+                        .kalendarium_wydarzeniecol {
+                            background-color: rgba(0, 0, 0, 0.7);
+                            max-width: 100%;
+                        }
+
+                        .kalendarium_obrazek_img {
+                            display: block;
+                        }
+
+                    }
+                
+
+
+		#wrapperSectionAllNews .news_column.img {
+			background-position: center;
+			background-size: auto 80px !important;
+			background-repeat: no-repeat;
+			height: 80px;
+		}
+
+		#wrapperSectionAllNews .news_column {
+			vertical-align: top;
+		}
+
+		#wrapperSectionAllNews .padding {
+			padding: 0.5em 1em;
+		}
+
+		#wrapperSectionAllNews .news_wyswietl_wiecej_link {
+			display: inline-block;
+			margin-top: 1em;
+			padding: 0.5em 1em;
+		}
+
+		#wrapperSectionAllNews .img_src {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		#wrapperSectionAllNews .news_obrazek,
+		#wrapperSectionAllNews .img-is-visible .system_display_block {
+			margin: 0 auto;
+		}
+
+		#wrapperSectionAllNews .news_obrazek {
+			float: none;
+		}
+
+		#wrapperSectionAllNews .img2bg.bg-no-float {
+			padding-bottom: 30%;
+		}
+
+		.news_box .news_obrazek,
+		.news_box .system_display_block {
+			display:block;
+			margin: 0 auto;
+		}
+
+
+		@media screen and (max-width: 768px) {
+
+			#wrapperSectionAllNews .news_table,
+			#wrapperSectionAllNews .news_column {
+				display: block;
+				width: auto;
+			}
+
+			#wrapperSectionAllNews .img2bg {
+//				padding-bottom: 30%;
+                padding-bottom: 0;
+			}
+
+			#wrapperSectionAllNews .img-is-visible .news_obrazek {
+				margin: 0 auto;
+				display: block;
+		}
+
+		@media screen and (max-width: 568px) {
+
+			#wrapperSectionAllNews .img2bg {
+				padding-top: 40%;
+			}
+
+		}
+
+	
+/*]]>*/--></STYLE>
+</HEAD>
+<BODY class="subpage fontsize_normal">
+
+	<div id="shortcutBox" class="hide">
+	<ul><li><a href="./" accesskey="1">Przejdź do strony głównej</a></li><li><a href="https://www.lubianka.pl/9411,wszystkie-aktualnosci#menu" accesskey="2" class="scroll">Przejdź do menu głównego</a></li><li><a href="https://www.lubianka.pl/9411,wszystkie-aktualnosci#PageContent" accesskey="3" class="scroll">Przejdź do treści strony</a></li><li><a href="https://www.lubianka.pl/9411,wszystkie-aktualnosci/redir,struktura-serwisu" accesskey="4">Przejdź do mapy serwisu</a></li><li><a href="https://www.lubianka.pl/9411,wszystkie-aktualnosci#search-form" accesskey="5" class="scroll">Przejdź do wyszukiwarki</a></li><li><a href="9408,kontakt" accesskey="9">Przejdź do kontaktu</a></li><li><a href="9407,oswiadczenie-dostepnosci" accesskey="0">Oświadczenie o dostępności</a></li></ul></div><!-- netadmin -->
+<div class="netadmin">
+	<div class="header" id="header">
+    <div class="navbar__dummy" id="navbar__dummy"></div>
+
+<!-- NAVBAR -->
+<div class="navbar" id="navbar">
+    <div class="netadmin__container">
+        <div class="navbar__table">
+            <div class="navbar__cell">
+                
+<!-- LOGO -->
+<div class="logo logo--skin">
+    <h1 class="logo__heading">
+        <a href="./" class="logo__link">
+            <span class="logo__container">
+                <img class="logo__img" src="logo,ug-lubianka.png" alt="Logo gimny Łubianka - Przejdź do strony głównej">
+     
+            </span>
+            <span class="logo__txt">
+                <span class="logo__text--block">Gmina</span>
+                <span class="logo__text--block logo__text--bold">Łubianka</span>
+            </span>
+        </a>
+    </h1>
+</div>
+<!-- END LOGO -->
+                </div>
+            <div class="navbar__cell">
+                
+
+<div class="menu netadmin--hide-hc" id="menu">
+    <div class="heading netadmin--hide">
+        <div class="heading__container">
+            <h2 class="heading__title">Menu główne</h2>
+        </div>
+    </div>
+    <div class="menu__box" id="menu__box">
+        <div class="menu__inner" id="menu__inner">
+        
+	<ul class="menu__list">
+<li class="menu__list-item menu__list-item--on menu__list-item--selected"><a class="menu__list-link" href="9371,aktualnosci"><span>AKTUALNOŚCI</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9372,gmina"><span>GMINA</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9379,jednostki-organizacyjne"><span>JEDNOSTKI ORGANIZACYJNE</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9386,rozwoj"><span>ROZWÓJ</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9387,sport-i-rekreacja"><span>SPORT I REKREACJA</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9388,wspolpraca-z-mieszkancami"><span>WSPÓŁPRACA Z MIESZKAŃCAMI</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9390,wzory-wnioskow"><span>WZORY WNIOSKÓW</span></a></li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9389,uslugi-komunalne"><span>USŁUGI KOMUNALNE</span></a>
+		<ul class="menu__sub-list">
+<li class="menu__sub-list-item"><a class="menu__sub-list-link" href="9454,woda-i-scieki"><span>Woda i ścieki</span></a></li>
+
+<li class="menu__sub-list-item"><a class="menu__sub-list-link" href="9455,odpady-komunalne"><span>Odpady komunalne</span></a></li>
+
+<li class="menu__sub-list-item"><a class="menu__sub-list-link" href="9456,punky-selektywnej-zbiorki-odpadow-komunalnych"><span>Punky Selektywnej Zbiórki Odpadów Komunalnych</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu__list-item"><a class="menu__list-link" href="9536,koronawirus"><span>KORONAWIRUS</span></a></li>
+
+
+	</ul>
+
+	        </div>
+    </div>
+</div>
+<!-- END MENU -->
+
+<div class="menu-rwd" id="menu-rwd">
+    <div class="heading netadmin--hide">
+        <div class="heading__container">
+            <h2 class="heading__title">Menu dla urządzeń mobilnych</h2>
+        </div>
+    </div>
+    <button class="menu-rwd__btn-toggle netadmin--hide-hc" id="menu-rwd__btn-toggle">
+        <span class="icon icon--bars"><!--//--></span>
+        <span class="netadmin--hide netadmin--hide-hc">Pokaż/ukryj Menu</span>
+    </button>
+    <div class="menu-rwd__box" id="menu-rwd__box">
+        <div class="menu-rwd__inner" id="menu-rwd__inner">
+            
+	<ul class="menu-rwd__list">
+<li class="menu-rwd__list-item menu-rwd__list-item--on menu-rwd__list-item--selected"><a class="menu-rwd__list-link" href="9371,aktualnosci"><span>AKTUALNOŚCI</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9430,2019"><span>2019</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9372,gmina"><span>GMINA</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__list-item-separator" style="height:20px;"><!-- //--></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9433,historia-i-polozenie"><span>Historia i położenie</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9412,wladze-gminy"><span>Władze Gminy</span></a>
+			<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link external_blank" href="http://bip.lubianka.lo.pl/?cid=267"><span>Interpelacje i zapytania Radnych Rady Gminy</span></a></li>
+
+
+			</ul>
+
+			</li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9478,urzad-gminy"><span>Urząd Gminy</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9434,gminne-honory"><span>Gminne Honory</span></a>
+			<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9469,zloty-medal-za-zaslugi-dla-gminy-lubianka"><span>Złoty Medal &quot;Za Zasługi dla Gminy Łubianka&quot;</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9470,srebrny-medal-za-zaslugi-dla-gminy-lubianka"><span>Srebrny Medal &quot;Za Zasługi dla Gminy Łubianka&quot;</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9471,brazowy-medal-za-zaslugi-dla-gminy-lubianka"><span>Brązowy Medal &quot;Za Zasługi dla Gminy Łubianka&quot;</span></a></li>
+
+
+			</ul>
+
+			</li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9435,parafie"><span>Parafie</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="3448,informator-gminny"><span>Informator Gminny</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9379,jednostki-organizacyjne"><span>JEDNOSTKI ORGANIZACYJNE</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link external_blank" href="9438,biblioteka-centrum-kultury"><span>Biblioteka - Centrum Kultury</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9439,oswiata"><span>Oświata</span></a>
+			<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9461,rozklad-jazdy-autobusow-szkolnych-2020-2021"><span>Rozkład jazdy autobusów szkolnych 2020/2021</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9526,eu-geniusz-w-naukowym-labiryncie"><span>EU-geniusz w naukowym labiryncie</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="https://www.lubianka.pl/plik,23334,eu-geniusz-w-swiecie-3d-pdf.pdf"><span>EU-GENIUSZ w świecie 3D</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9548,zdalna-szkola"><span>Zdalna Szkoła</span></a></li>
+
+
+			</ul>
+
+			</li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link external_blank" href="http://gopslubianka.pl/"><span>Gminny Ośrodek Pomocy Społecznej</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9386,rozwoj"><span>ROZWÓJ</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9424,miejscowe-plany-zagospodarowania-przestrzennego"><span>Miejscowe plany <br>zagospodarowania przestrzennego</span></a>
+			<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9441,lubianka"><span>Łubianka</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9442,pigza"><span>Pigża</span></a></li>
+
+
+			</ul>
+
+			</li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9443,dzialalnosc-gospodarcza"><span>Działalność <br>gospodarcza</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9444,studium-uwarunkowan-i-kierunkow-zagospodarowania-przestrzennego"><span>Studium uwarunkowań <br>i kierunków zagospodarowania przestrzennego</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9445,dzialki-budowlane"><span>Działki <br>budowlane</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9504,fundusze-unijne"><span>Fundusze <br>unijne</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9544,fundusz-drog-samorzadowych"><span>Fundusz <br>Dróg <br>Samorządowych</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9387,sport-i-rekreacja"><span>SPORT I REKREACJA</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9446,kalendarz-wydarzen"><span>Kalendarz wydarzeń</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9449,kluby-sportowe"><span>Kluby sportowe</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9448,biegi"><span>Biegi</span></a>
+			<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9528,tropem-wilczym-bieg-pamieci-zolnierzy-wykletych"><span>TROPEM WILCZYM - Bieg Pamięci Żołnierzy Wyklętych</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9473,bieg-samorzadowy"><span>Bieg Samorządowy</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9474,bieg-niepodleglosci"><span>Bieg Niepodległości</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9475,grand-prix-cross-dorosli"><span>Grand Prix Cross dorośli</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9476,grand-prix-cross-dzieci"><span>Grand Prix Cross dzieci</span></a></li>
+
+
+			</ul>
+
+			</li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9447,gminna-liga-futsalu"><span>Gminna Liga Futsalu</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9388,wspolpraca-z-mieszkancami"><span>WSPÓŁPRACA Z MIESZKAŃCAMI</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9450,dokumenty-strategiczne"><span>Dokumenty strategiczne</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9451,zimowe-utrzymanie-drog"><span>Zimowe utrzymanie dróg</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9452,gminna-komunikacja-autobusowa"><span>Gminna komunikacja autobusowa</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link external_blank" href="http://www.bip.lubianka.lo.pl/?cid=230"><span>Konkursy ofert na wykonywanie zadań publicznych</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9453,gazyfikacja"><span>Gazyfikacja</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9390,wzory-wnioskow"><span>WZORY WNIOSKÓW</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9457,wydzial-finansowo-budzetowy"><span>Wydział Finansowo - Budżetowy</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9458,wydzial-gospodarki-komunalnej"><span>Wydział Gospodarki Komunalnej</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9459,wydzial-infrastruktury-rolnictwa-i-ochrony-srodowiska"><span>Wydział Infrastruktury, Rolnictwa i Ochrony Środowiska</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9477,wydzial-inwestycji-i-rozwoju"><span>Wydział Inwestycji i Rozwoju</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9460,ewidencja-ludnosci-i-dowody-osobiste"><span>Ewidencja Ludnosci i Dowody Osobiste</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9389,uslugi-komunalne"><span>USŁUGI KOMUNALNE</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9454,woda-i-scieki"><span>Woda i ścieki</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9455,odpady-komunalne"><span>Odpady komunalne</span></a></li>
+
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9456,punky-selektywnej-zbiorki-odpadow-komunalnych"><span>Punky Selektywnej Zbiórki Odpadów Komunalnych</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+<li class="menu-rwd__list-item"><a class="menu-rwd__list-link" href="9536,koronawirus"><span>KORONAWIRUS</span></a>
+		<ul class="menu-rwd__sub-list">
+<li class="menu-rwd__sub-list-item"><a class="menu-rwd__sub-list-link" href="9537,informacje-poswiecone-koronawirusowi"><span>Informacje poświęcone Koronawirusowi</span></a></li>
+
+
+		</ul>
+
+		</li>
+
+
+	</ul>
+
+	        </div>
+    </div>
+</div>
+
+            </div>
+            <div class="navbar__cell">
+                            </div>
+        </div>
+    </div>
+</div>
+    <!-- STICKY ICONS -->
+    <div class="sticky-icons" id="sticky-icons">
+        <button class="sticky-icons__btn netadmin--hide-hc" id="sticky-icons__btn" title="Pokaż/ukryj ikony">
+            <span class="icon icon--cog"><!-- // --></span>
+            <span class="netadmin--hide">Pokaż/ukryj ikony</span>
+        </button>
+        <div class="heading netadmin--hide">
+            <div class="heading__container">
+                <h2 class="heading__title">Ikony dostępowe i social-media</h2>
+            </div>
+        </div>
+    
+    <div class="sticky-icons__box sticky-icons--fixed sticky-icons--position-left">
+        <div class="sticky-icons__inner">
+            <ul class="sticky-icons__list">
+            
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--facebook external_blank" href="./9394,link-do-facebooka">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do Facebooka</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9394,link-do-facebooka">
+                            Link do Facebooka
+                        </a>
+                    </div>
+                </li>
+                    
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--youtube external_blank" href="./9395,link-do-youtube">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do YouTube</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9395,link-do-youtube">
+                            Link do YouTube
+                        </a>
+                    </div>
+                </li>
+                    
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--ziemia-gotyku external_blank" href="./9398,link-do-ziemi-gotyku">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do Ziemi Gotyku</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9398,link-do-ziemi-gotyku">
+                            Link do Ziemi Gotyku
+                        </a>
+                    </div>
+                </li>
+                    
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--sisms external_blank" href="./9399,link-do-sisms">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do sisms</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9399,link-do-sisms">
+                            Link do sisms
+                        </a>
+                    </div>
+                </li>
+                    
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--epuap external_blank" href="./9400,link-do-epuap">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do epuap</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9400,link-do-epuap">
+                            Link do epuap
+                        </a>
+                    </div>
+                </li>
+                    
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--geoportal external_blank" href="./9401,link-do-geoportalu">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do geoportalu</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9401,link-do-geoportalu">
+                            Link do geoportalu
+                        </a>
+                    </div>
+                </li>
+                    
+            </ul>
+        </div>
+    </div>
+            
+    <div class="sticky-icons__box sticky-icons--fixed sticky-icons--position-right">
+        <div class="sticky-icons__inner">
+            <ul class="sticky-icons__list">
+            
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico--direct netadmin--hide-hc sticky-icons__ico sticky-icons__ico--bip external_blank" href="./9403,link-do-bip">
+                        <span class="sticky-icons__ico--hide">Przejdź do profilu na Link do BIP</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <a class="sticky-icons__link sticky-icons__link--skin-color external_blank" href="./9403,link-do-bip">
+                            Link do BIP
+                        </a>
+                    </div>
+                </li>
+                    
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico sticky-icons__ico--search netadmin--hide-hc" href="#">
+                        <span class="sticky-icons__ico--hide">Wyszukiwarka</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+            <div class="heading netadmin--hide">
+    <div class="heading__container">
+        <h2 class="heading__title">Wyszukiwarka</h2>
+    </div>
+</div>
+<form method="get" class="search-form" id="search-form" action="redir,szukaj2?jezyk=1">
+    <fieldset class="search-form__fieldset">
+        <legend for="drzewo_szukaj" class="search-form__legend netadmin--hide">Wyszukiwarka :</legend>
+        <div class="search-form--hide">
+            <input type="hidden" name="drzewo_szukaj" id="drzewo_szukaj" value="20" >
+        </div>
+        <div class="search-form__inner search-form--table">
+            <div class="search-form__field-box search-form--cell">
+                <label for="search-form__field--input" class="search-form__label netadmin--hide">Wyszukaj</label>
+                <input id="search-form__field--input" class="search-form__field search-form__field--input" type="text" name="szukaj" value="Wyszukaj..." onfocus="if (this.defaultValue == this.value) this.value=''">
+            </div>
+            <div class="search-form__field-box search-form--cell">
+                <button id="search-form__submit" class="search-form__field search-form__field--submit" type="submit" value="szukaj">Szukaj</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+
+                    </div>
+                </li>
+            
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico sticky-icons__ico--wcag netadmin--hide-hc" href="#">
+                        <span class="sticky-icons__ico--hide">Dostępność</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+            
+<div class="wcag" id="wcag">
+    <div class="heading netadmin--hide">
+        <div class="heading__container">
+            <h2 class="heading__title">Dostępność</h2>
+        </div>
+    </div>
+    <ul class="ul wcag__list wcag--table">   
+        <li class="wcag__item wcag--cell wcag--cell-width"><a class="wcag__link wcag__link--A" title="normalna wielkość czcionki"  href="/9411,wszystkie-aktualnosci?fontsize=normal"><span class="wcag__txt"><span class="netadmin--hide-hc">A</span><span class="netadmin--hide">normalna wielkość czcionki</span></span></a></li>
+        <li class="wcag__item wcag--cell wcag--cell-width"><a class="wcag__link wcag__link--AA" title="duża wielkość czcionki" href="/9411,wszystkie-aktualnosci?fontsize=big"><span class="wcag__txt"><span class="netadmin--hide-hc">A</span><span class="netadmin--hide">duża wielkość czcionki</span></span></a></li>
+        <li class="wcag__item wcag--cell wcag--cell-width"><a class="wcag__link wcag__link--AAA" title="największa wielkość czcionki" href="/9411,wszystkie-aktualnosci?fontsize=bigger"><span class="wcag__txt"><span class="netadmin--hide-hc">A</span><span class="netadmin--hide">największa wielkość czcionki</span></span></a></li>
+        
+        <li class="wcag__item wcag--cell"><a class="wcag__link wcag__link--HC" href="./skin,hc" title="Wysoki kontrast"><span class="wcag__txt">Wysoki kontrast</span></a></li>
+                </ul>
+</div>
+
+
+                    </div>
+                </li>
+            
+                <li class="sticky-icons__item">
+                    <a class="sticky-icons__ico sticky-icons__ico--calendar netadmin--hide-hc" href="#">
+                        <span class="sticky-icons__ico--hide">Kalendarium</span>
+                    </a>
+                    <div class="sticky-icons__content sticky-icons--border">
+                        <div class="sticky-icons--calendar-outer">
+            
+    <div class="calendar aside-box" id="calendar">
+        <div class="heading netadmin--hide">
+            <div class="heading__container">
+                <h2 class="heading__title">Kalendarium</h2>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="content">
+                <div class="calendarEvents">
+                    <div class="netadmin__container">
+                    <div class="kalendarium2" id="kalendariumBox"><table class="kalendarium2_tab" summary="Kalendarium"><caption class="kalendarium2_caption"><span class="captionBox"><a class="kalendarium2_poprzedni_a" href="?strona=9411&amp;rw_name=wszystkie-aktualnosci&amp;katns=ogolna&amp;kalm=10&amp;kalr=2020#kalendariumBox"><span class="kalendarium2_poprzedni_arrow">&laquo;</span></a><span class="data"><span class="miesiac">listopad</span> <span class="rok">2020</span></span><a class="kalendarium2_nastepny_a" href="?strona=9411&amp;rw_name=wszystkie-aktualnosci&amp;katns=ogolna&amp;kalm=12&amp;kalr=2020#kalendariumBox"><span class="kalendarium2_nastepny_arrow">&raquo;</span></a></span></caption><thead><tr class="kalendarium2_header"><th title="poniedziałek">Pn</th><th title="wtorek">Wt</th><th title="środa">Śr</th><th title="czwartek">Czw</th><th title="piątek">Pt</th><th class="kalendarium2_header_weekend" title="sobota">Sob</th><th class="kalendarium2_header_weekend" title="niedziela">Nd</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td class="kalendarium2_dzien_7 kalendarium2_weekend kalendarium2_niedziela kalendarium2_przeszlosc"><span>1</span></td></tr><tr><td class="kalendarium2_dzien_1 kalendarium2_przeszlosc"><span>2</span></td><td class="kalendarium2_dzien_2 kalendarium2_przeszlosc"><span>3</span></td><td class="kalendarium2_dzien_3 kalendarium2_przeszlosc"><span>4</span></td><td class="kalendarium2_dzien_4 kalendarium2_przeszlosc"><span>5</span></td><td class="kalendarium2_dzien_5 kalendarium2_przeszlosc"><span>6</span></td><td class="kalendarium2_dzien_6 kalendarium2_weekend kalendarium2_sobota kalendarium2_przeszlosc"><span>7</span></td><td class="kalendarium2_dzien_7 kalendarium2_weekend kalendarium2_niedziela kalendarium2_przeszlosc"><span>8</span></td></tr><tr><td class="kalendarium2_dzien_1 kalendarium2_przeszlosc"><span>9</span></td><td class="kalendarium2_dzien_2 kalendarium2_przeszlosc"><span>10</span></td><td class="kalendarium2_dzien_3 kalendarium2_przeszlosc"><span>11</span></td><td class="kalendarium2_dzien_4 kalendarium2_przeszlosc"><span>12</span></td><td class="kalendarium2_dzien_5 kalendarium2_przeszlosc"><span>13</span></td><td class="kalendarium2_dzien_6 kalendarium2_weekend kalendarium2_sobota kalendarium2_przeszlosc"><span>14</span></td><td class="kalendarium2_dzien_7 kalendarium2_weekend kalendarium2_niedziela kalendarium2_przeszlosc"><span>15</span></td></tr><tr><td class="kalendarium2_dzien_1 kalendarium2_przeszlosc"><span>16</span></td><td class="kalendarium2_dzien_2 kalendarium2_przeszlosc"><span>17</span></td><td class="kalendarium2_dzien_3 kalendarium2_przeszlosc"><span>18</span></td><td class="kalendarium2_dzien_4 kalendarium2_przeszlosc"><span>19</span></td><td class="kalendarium2_dzien_5 kalendarium2_przeszlosc"><span>20</span></td><td class="kalendarium2_dzien_6 kalendarium2_weekend kalendarium2_sobota kalendarium2_przeszlosc"><span>21</span></td><td class="kalendarium2_dzien_7 kalendarium2_weekend kalendarium2_niedziela kalendarium2_przeszlosc"><span>22</span></td></tr><tr><td class="kalendarium2_dzien_1 kalendarium2_przeszlosc"><span>23</span></td><td class="kalendarium2_dzien_2 kalendarium2_przeszlosc"><span>24</span></td><td class="kalendarium2_dzien_3 kalendarium2_przeszlosc"><span>25</span></td><td class="kalendarium2_dzien_4 kalendarium2_dzis"><span>26</span></td><td class="kalendarium2_dzien_5 kalendarium2_przyszlosc"><span>27</span></td><td class="kalendarium2_dzien_6 kalendarium2_weekend kalendarium2_sobota kalendarium2_przyszlosc"><span>28</span></td><td class="kalendarium2_dzien_7 kalendarium2_weekend kalendarium2_niedziela kalendarium2_przyszlosc"><span>29</span></td></tr><tr><td class="kalendarium2_dzien_1 kalendarium2_przyszlosc"><span>30</span></td><td></td><td></td><td></td><td></td><td></td><td></td></tbody></table></div>
+                    <div class="kalendarium_wydarzenia_najblizsze_brak">Brak wydarzeń w wybranym okresie</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<SCRIPT TYPE="text/javascript"><!--//--><![CDATA[//><!--
+
+            $('#calendar').on('click','a.kalendarium2_poprzedni_a, a.kalendarium2_nastepny_a',function(e){
+                e.preventDefault();
+                let link = './skory/pokaz_kalendarium2_ajax.php'+$(this).attr('href');
+                $.ajax({
+                        url: link,
+                        timeout: 3000,
+                        type: 'POST',
+                        cache: false,
+                        success: function(html){
+                        
+                            $('#kalendariumBox').parent().html(html);
+                            
+                            extraFeaturesCalendar();
+                        },
+                        error: function()
+                        {
+                            $('#kalendariumBox').parent().html('<span class="calendar--error">Kalendarz nie mógł zostać wczytany<\/span>');
+                        }
+                })
+                return false;
+                
+            });
+        
+//--><!]]></SCRIPT><NOSCRIPT><h3>Twoja przeglądarka internetowa ma wyłączoną obsługę języka JavaScript. Takie ustawienie może powodować problemy z poprawną obsługą niniejszej strony.</h3></NOSCRIPT>
+
+                        </div>
+                    </div>
+                </li>
+            
+            </ul>
+        </div>
+    </div>
+            
+</div>
+<!-- END STICKY ICONS -->
+    <div class="menu-bottom netadmin--hide-hc" id="menu-bottom">
+    <div class="heading netadmin--hide">
+        <div class="heading__container">
+            <h2 class="heading__title">Menu podstrona</h2>
+        </div>
+    </div>
+    <div class="menu-bottom__box" id="menu-bottom__box">
+        <div class="menu-bottom__inner" id="menu-bottom__inner">
+
+            
+	<ul class="menu-bottom__list">
+<li class="menu-bottom__list-item"><a class="menu-bottom__list-link" href="9430,2019"><span>2019</span></a></li>
+
+
+	</ul>
+
+	
+        </div>
+    </div>
+</div>
+</div><!-- BREADCRUMBS -->     
+<div class="breadcrumb">
+    <div class="netadmin__container">
+        <div class="heading netadmin--hide">
+            <div class="heading__container">
+                <h2 class="heading__title">Ścieżka nawigacyjna</h2>
+            </div>
+        </div>
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item breadcrumb__item--first">
+                <a class="breadcrumb__link breadcrumb__link--home" href="./" title = "Przejdź do strony głównej"><span class="hide">Powrót do strony głównej</span></a>
+            </li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="9371,aktualnosci">AKTUALNOŚCI</a></li><li class="breadcrumb__item"><span class="last">Wszystkie aktualności</span></li>        
+        </ul>
+    </div>
+</div>
+		<div class="netadmin__content" id="PageContent">
+            <div class="netadmin__container">
+                <div class="heading netadmin--hide">
+                    <div class="heading__container">
+                        <h2 class="heading__title">Wszystkie aktualności</h2>
+                    </div>
+                </div>
+		
+<h2 class="strona_newsowa_naglowek netadmin--hide">Wszystkie aktualności</h2><div id="wrapperSectionAllNews" class="newsUl strona_newsowa_wykaz"><h3 class="hide">Stronicowanie</h3><ul class="system_center stronicowanie"><li><span class="stronicowanie_aktywna_strona">[1]<span class="hide"> (bieżąca podstrona)</span></span></li><li><a href="9411,wszystkie-aktualnosci?news_page=2"><span class="hide">przejdź do strony nr </span>2</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=3"><span class="hide">przejdź do strony nr </span>3</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=4"><span class="hide">przejdź do strony nr </span>4</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=5"><span class="hide">przejdź do strony nr </span>5</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=6"><span class="hide">przejdź do strony nr </span>6</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=7"><span class="hide">przejdź do strony nr </span>7</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=8"><span class="hide">przejdź do strony nr </span>8</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=9"><span class="hide">przejdź do strony nr </span>9</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=10"><span class="hide">przejdź do strony nr </span>10</a></li><li class="stronicowanie_separator">...</li><li><a href="9411,wszystkie-aktualnosci?news_page=43" class="stronicowanie_nastepne">43<span class="hide"> (ostatnia podstrona)</span></a></li><li><a href="9411,wszystkie-aktualnosci?news_page=2" class="stronicowanie_nastepne">&gt;<span class="hide"> (następna podstrona)</span></a></li><li><a href="9411,wszystkie-aktualnosci?news_page=11" class="stronicowanie_nastepne">&raquo;<span class="hide"> (przejdź do podstrony nr 11)</span></a></li></ul><div class="clear"></div><ul class="system_ul"><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57804" class="news_obrazek_link"><img src="news,obrazek,2339,informacja-dot-aktualnej-organizacji-pracy-urzedu-gminy-wprowadzonej-w-celu-przeciwdzialania-koronawirusa.jpg" width="2318" height="2966" class="system_border0 news_obrazek system_float_left" alt="-"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Informacja dot. aktualnej organizacji pracy Urzędu Gminy wprowadzonej w celu przeciwdziałania koronawirusa</h3></div><div class="system_bold system_font_smaller news_data">2020.11.02</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57804"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Informacja dot. aktualnej organizacji pracy Urzędu Gminy wprowadzonej w celu przeciwdziałania koronawirusa)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57827" class="news_obrazek_link"><img src="news,obrazek,2357,wirtualne-turnieje-szachowe-andrzejkowo-mikolakowo-swiateczne.jpg" width="195" height="259" class="system_border0 news_obrazek system_float_left" alt="Wirtualne Turnieje Szachowe andrzejkowo-mikołakowo-świąteczne"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Wirtualne Turnieje Szachowe andrzejkowo-mikołakowo-świąteczne</h3></div><div class="system_bold system_font_smaller news_data">2020.11.25</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57827"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Wirtualne Turnieje Szachowe andrzejkowo-mikołakowo-świąteczne)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="http://www.bip.lubianka.lo.pl/?cid=230&amp;bip_id=4194" class="news_obrazek_link"><img src="news,obrazek,2356,konkurs-ofert-1-2021-pozytek-publiczny-i-wolontariat.png" width="2318" height="2966" class="system_border0 news_obrazek system_float_left" alt="-"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Konkurs ofert 1/2021 – pożytek publiczny i wolontariat</h3></div><div class="system_bold system_font_smaller news_data">2020.11.24</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="http://www.bip.lubianka.lo.pl/?cid=230&amp;bip_id=4194"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Konkurs ofert 1/2021 – pożytek publiczny i wolontariat)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57826" class="news_obrazek_link"><img src="news,obrazek,2355,umow-sie-telefonicznie-na-wizyte-w-zus.png" width="600" height="318" class="system_border0 news_obrazek system_float_left" alt="Umów się telefonicznie na wizytę w ZUS"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Umów się telefonicznie na wizytę w ZUS</h3></div><div class="system_bold system_font_smaller news_data">2020.11.23</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57826"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Umów się telefonicznie na wizytę w ZUS)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="http://www.bip.lubianka.lo.pl/?cid=204&amp;bip_id=4184" class="news_obrazek_link"><img src="news,obrazek,2352,wojt-gminy-lubianka-oglasza-otwarty-i-konkurencyjny-nabor-na-wolne-urzednicze-stanowisko-pracy-ds-ksiegowosci-i-ewidencji-vat-w-wydziale-finansowo-budzetowym-w-urzedzie-gminy-w-lubiance.png" width="2318" height="2966" class="system_border0 news_obrazek system_float_left" alt="-"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">WÓJT GMINY ŁUBIANKA ogłasza otwarty i konkurencyjny nabór na wolne urzędnicze stanowisko pracy ds. księgowości i ewidencji VAT w Wydziale Finansowo - Budżetowym w Urzędzie Gminy w Łubiance</h3></div><div class="system_bold system_font_smaller news_data">2020.11.20</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="http://www.bip.lubianka.lo.pl/?cid=204&amp;bip_id=4184"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (WÓJT GMINY ŁUBIANKA ogłasza otwarty i konkurencyjny nabór na wolne urzędnicze stanowisko pracy ds. księgowości i ewidencji VAT w Wydziale Finansowo - Budżetowym w Urzędzie Gminy w Łubiance)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57821" class="news_obrazek_link"><img src="news,obrazek,2350,gmina-lubianka-ze-statuetka-eko-orlow-2020.jpg" width="2318" height="2966" class="system_border0 news_obrazek system_float_left" alt="Gmina Łubianka ze statuetką Eko-Orłów 2020"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Gmina Łubianka ze statuetką Eko-Orłów 2020</h3></div><div class="system_bold system_font_smaller news_data">2020.11.18</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57821"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Gmina Łubianka ze statuetką Eko-Orłów 2020)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57823" class="news_obrazek_link"><img src="news,obrazek,2351,dodatkowy-zasilek-opiekunczy-w-listopadzie-nie-dla-kazdego.png" width="600" height="318" class="system_border0 news_obrazek system_float_left" alt="Dodatkowy zasiłek opiekuńczy w listopadzie nie dla każdego"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Dodatkowy zasiłek opiekuńczy w listopadzie nie dla każdego</h3></div><div class="system_bold system_font_smaller news_data">2020.11.17</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57823"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Dodatkowy zasiłek opiekuńczy w listopadzie nie dla każdego)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57819" class="news_obrazek_link"><img src="news,obrazek,2349,jak-umowic-wizyte-w-urzedzie-skarbowym.png" width="730" height="420" class="system_border0 news_obrazek system_float_left" alt="Jak umówić wizytę w urzędzie skarbowym"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Jak umówić wizytę w urzędzie skarbowym</h3></div><div class="system_bold system_font_smaller news_data">2020.11.16</div><div class="news_tekst_box"><p style="text-align:center;"><img alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEAAQBIAAAAAQAB/+4AE0Fkb2JlAGQAAAAAAQUAAklE/9sAhAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMDAwMDAQEBAQEBAQEBAQECAgECAgMCAgICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMEBAQEBAQEBAQEBAQEBAQEBAQEBAT/wAARCABuAfQDAREAAhEBAxEB/8QBogAAAAYCAwEAAAAAAAAAAAAABwgGBQQJAwoCAQALAQAABgMBAQEAAAAAAAAAAAAGBQQDBwIIAQkACgsQAAIBAwQBAwMCAwMDAgYJdQECAwQRBRIGIQcTIgAIMRRBMiMVCVFCFmEkMxdScYEYYpElQ6Gx8CY0cgoZwdE1J+FTNoLxkqJEVHNFRjdHYyhVVlcassLS4vJkg3SThGWjs8PT4yk4ZvN1Kjk6SElKWFlaZ2hpanZ3eHl6hYaHiImKlJWWl5iZmqSlpqeoqaq0tba3uLm6xMXGx8jJytTV1tfY2drk5ebn6Onq9PX29/j5+hEAAgEDAgQEAwUEBAQGBgVtAQIDEQQhEgUxBgAiE0FRBzJhFHEIQoEjkRVSoWIWMwmxJMHRQ3LwF+GCNCWSUxhjRPGisiY1GVQ2RWQnCnODk0Z0wtLi8lVldVY3hIWjs8PT4/MpGpSktMTU5PSVpbXF1eX1KEdXZjh2hpamtsbW5vZnd4eXp7fH1+f3SFhoeIiYqLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6/9oADAMBAAIRAxEAPwCk/wB479faR1737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3XvfuvdfTM/lrf9u/fhr/AOK49T/+8hjPc5bF/wAkbbP+aK/4Ovk2+9Z/4kr76/8Ai1bj/wBpMnR3PZt1AHXvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3XvfuvdfJX9479faR1737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3XvfuvdfTM/lrf9u/fhr/4rj1P/wC8hjPc5bF/yRts/wCaK/4Ovk2+9Z/4kr76/wDi1bj/ANpMnR3PZt1AHXvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3XvfuvdfJX9479faR1737r3Xvfuvde9+691737r3XvfuvdW2fGj+Sb88flB17h+09tbM2j15sfc+Pp8vtDK9t7om2rV7sw9WqyUeYw+AxeH3FuKLE5CncT0lTWUlJBW0zLNTtLE8bsIbDljdtwhW4jiVIWFVaQ01D1AoTQ+RpQjI6wr91/v+fdz9o+Zr7k/dd9vd05gtJWgvYdktxcLbyrUNFLNJLBCZEYaXSN3aNgUcKwYAxv/QN//MB/56P44f8Aoxd4f/az9rv6k7x/HB/vR/6B6i7/AJOnfdq/6NXNX/ZFbf8Abf17/oG//mA/89H8cP8A0Yu8P/tZ+/f1J3j+OD/ej/0D17/k6d92r/o1c1f9kVt/239e/wCgb/8AmA/89H8cP/Ri7w/+1n79/UneP44P96P/AED17/k6d92r/o1c1f8AZFbf9t/Xv+gb/wDmA/8APR/HD/0Yu8P/ALWfv39Sd4/jg/3o/wDQPXv+Tp33av8Ao1c1f9kVt/239e/6Bv8A+YD/AM9H8cP/AEYu8P8A7Wfv39Sd4/jg/wB6P/QPXv8Ak6d92r/o1c1f9kVt/wBt/Xv+gb/+YD/z0fxw/wDRi7w/+1n79/UneP44P96P/QPXv+Tp33av+jVzV/2RW3/bf17/AKBv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COmqOxu4N20dPJD/AHh3flYY0SGiozUTJjcVSiPHYuCVlhj8ktRNN7r3Vh/v3Xuve/de697917r3v3Xuve/de697917r3v3Xuvkr+8d+vtI697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3XussE89LPDVUs0tNU00sc9PUQSPDPBPC4khmhmjKyRSxSKGVlIKkXHPv3VJYo5o5IZo1eF1KujAEMCKEEHBBGCDx626P5d//AAoV2dSbP291L87DnMdnsBSUuIxfyBwWHq9w0G4MfT+Onppeydt4WCoz1JnqanAEuRxtNWrX6S8sEMuqSaRNl5yRI0tt2DVGBMorUf0wM1HqK18x5nid957+7K32XfNz50+7sLeXbLl2nm5auJVheB2qzCxnlKwtCx4RSvGY60V3WipeRB/NE/l41GGTOx/MTohaJ6c1Qgn3xj6XMiNSVKvt2pMW4EqLrxC1KJSOQtiPYrHMOylNf7yipx45/Zx/l1z3k+6J95yK+bbm9jeYzcBtGpbSRoq/KZawlf6QfT8+qbvn1/woe6z29tfOddfBoVm+t9ZWkq8ZJ3dnsFXYXZuzBPHJTvkdobd3HQ0mZ3buKlYk08lbSU2LhkCS2ro7xEM7xznCI3g2mrSEU8ZhQD/Sg5J+0AD59Z0/du/uxebd03fb+aPvC6Nu5dhdZhy/bSpLdXVCGCXM0DtFbQtwYRu8zCq/ot3dadOTyeSzeSyGZzOQrsvmMvXVeTy2WydXUV+SyeSr6iSrrshkK6rklqq2uraqV5JZZHaSSRizEkk+43ZixLMSWJqSfPruXaWlpt9pa2FhaxwWMEawwwwqEjjjQBUREUBURFACqAAAAAKdQfeulHXvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Wb7ioNOKQzzGlWZqhabyv9utQ6LE84h1eMTNGiqWtqKgC9h79034UXimfwl8croL0GrSCSFrxoCSacK9YffunOve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de6+mZ/LW/7d+/DX/xXHqf/wB5DGe5y2L/AJI22f8ANFf8HXybfes/8SV99f8Axatx/wC0mTo7ns26gDr3v3Xuve/de697917r3v3Xuve/de697917r3v3XutV7/hWh/L/AO2fmb8BNl9odHbaym+d/fEXsHLdlZrY+CpavIbgz3U25tuPhexKzbmLpHaTLZja0+MxWUkp1ieZ8ZSVhhvIqxTe691SL/Lg/wCFeuw/ij8CesPjV378YOw+xe3vjr1jiepOp9y9cbi2ti9hb82dsLb8WB6vpt+y7hqo89sXIYjCUFFishUY+jz61MdKa2OKN5fs0917olvxk+Hf8yP/AIVQfMLJfKD5PbyzXXPxP2ZnKjA5PsOkxopdidd7WiyCZI9D/GXaGQlFLm93zUcirXZaZauOjbTXZqoq6tqWirfde6+kv8SPiF8evg10btH47fGXrrD9b9ZbPp/2aGgj8+Y3FmpooUym7t556YHJ7r3hnXhV6vIVbyTPpSNdEMcUSe690Zb37r3Xvfuvde9+691737r3Xvfuvde9+691737r3XvfuvdfJX9479faR1737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3XvfuvdfTM/lrf9u/fhr/AOK49T/+8hjPc5bF/wAkbbP+aK/4Ovk2+9Z/4kr76/8Ai1bj/wBpMnR3PZt1AHXvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691XD2l/KB/led19gZPtPtH4H/Gbd3YGcrVyef3NWdX7fo63cWTV1kfJbjixVPQUe4MjUso889ZFPLUAWkZxx7917o+mx9ibI6x2lgdg9bbN2r17sTa1AmK2xsrY+3sRtPaW3MZEzvHjsDtzA0dBh8RQRvIxWGnhjjBYkDk+/de6VXv3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r5K/vHfr7SOve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r6Zn8tb/t378Nf/Fcep//AHkMZ7nLYv8AkjbZ/wA0V/wdfJt96z/xJX31/wDFq3H/ALSZOjuezbqAOve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de6//Z"></p>
+</div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57819"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Jak umówić wizytę w urzędzie skarbowym)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="http://www.bip.lubianka.lo.pl/?app=zarzadzenia&amp;nid=4177&amp;y=2020&amp;which=W%C3%B3jta+Gminy+%C5%81ubianka" class="news_obrazek_link"><img src="news,obrazek,2353,projektu-budzetu-gminy-lubianka-na-rok-2021-oraz-wieloletniej-prognozy-finansowej-na-lata-2021-2038.png" width="2318" height="2966" class="system_border0 news_obrazek system_float_left" alt="-"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Projektu Budżetu Gminy Łubianka na rok 2021 oraz Wieloletniej Prognozy Finansowej na lata 2021-2038</h3></div><div class="system_bold system_font_smaller news_data">2020.11.16</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="http://www.bip.lubianka.lo.pl/?app=zarzadzenia&amp;nid=4177&amp;y=2020&amp;which=W%C3%B3jta+Gminy+%C5%81ubianka"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Projektu Budżetu Gminy Łubianka na rok 2021 oraz Wieloletniej Prognozy Finansowej na lata 2021-2038)</span></a></div></div></div></div></li><li class="news_box"><div class="system_display_table system_width100 news_table item"><div class="system_display_tableCell system_width33 news_column img"><div class="img_src"><a href="https://www.lubianka.pl/redir,index?tresc=57818" class="news_obrazek_link"><img src="news,obrazek,2348,duze-zainteresowanie-e-wizytami.png" width="600" height="318" class="system_border0 news_obrazek system_float_left" alt="Duże zainteresowanie e-wizytami"></a></div></div><div class="system_display_tableCell system_width66 news_column content"><div class="system_padding05 padding"><div class="system_bold system_font_bigger news_tytul"><h3 class="system_margin0">Duże zainteresowanie e-wizytami</h3></div><div class="system_bold system_font_smaller news_data">2020.11.13</div><div class="news_tekst_box"></div><div class="system_right news_wyswietl_wiecej"><a class="news_wyswietl_wiecej_link" href="https://www.lubianka.pl/redir,index?tresc=57818"><span class="fa fa-chevron-right ico"><!-- // --></span> Czytaj więcej<span class="hide"> (Duże zainteresowanie e-wizytami)</span></a></div></div></div></div></li></ul><h3 class="hide">Stronicowanie</h3><ul class="system_center stronicowanie"><li><span class="stronicowanie_aktywna_strona">[1]<span class="hide"> (bieżąca podstrona)</span></span></li><li><a href="9411,wszystkie-aktualnosci?news_page=2"><span class="hide">przejdź do strony nr </span>2</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=3"><span class="hide">przejdź do strony nr </span>3</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=4"><span class="hide">przejdź do strony nr </span>4</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=5"><span class="hide">przejdź do strony nr </span>5</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=6"><span class="hide">przejdź do strony nr </span>6</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=7"><span class="hide">przejdź do strony nr </span>7</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=8"><span class="hide">przejdź do strony nr </span>8</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=9"><span class="hide">przejdź do strony nr </span>9</a></li><li><a href="9411,wszystkie-aktualnosci?news_page=10"><span class="hide">przejdź do strony nr </span>10</a></li><li class="stronicowanie_separator">...</li><li><a href="9411,wszystkie-aktualnosci?news_page=43" class="stronicowanie_nastepne">43<span class="hide"> (ostatnia podstrona)</span></a></li><li><a href="9411,wszystkie-aktualnosci?news_page=2" class="stronicowanie_nastepne">&gt;<span class="hide"> (następna podstrona)</span></a></li><li><a href="9411,wszystkie-aktualnosci?news_page=11" class="stronicowanie_nastepne">&raquo;<span class="hide"> (przejdź do podstrony nr 11)</span></a></li></ul><div class="clear"></div></div>
+
+        </div>
+    </div><!-- END PAGECONTENT -->
+    
+<!-- CONTACT -->
+<div class="contact" id="contact">
+    <div class="contact__list-outer">
+        <ul class="contact__list" id="contact__list">
+    
+            <li class="contact__item">
+                <a class="contact__link" href="#">Kontakt</a>
+            </li>
+        
+            <li class="contact__item">
+                <a class="contact__link" href="#">Awaria</a>
+            </li>
+        
+            <li class="contact__item">
+                <a class="contact__link" href="#">Film promocyjny</a>
+            </li>
+        
+        </ul>
+    </div>
+    <div class="contact__containers">
+        <ul class="contact__containers-list" id="contact__containers-list">
+    
+            <li class="contact__containers-item">
+                <div class="netadmin__container">
+                    <div class="heading netadmin--hide">
+                        <div class="heading__container">
+                            <h2 class="heading__title">
+                            Kontakt
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <div class="contact__scroll-box">
+        <div class="system_float_clear"></div><div><div class="system_anchor obiekt obiekt_akapit" id="akapit_29541"><div class="system_float system_float_right"><div>tel. +48 56 678 82 17, 678 82 18<br>
+fax +48 56 678 82 19<br><a href="mailto:gmina@lubianka.pl">gmina@lubianka.pl</a><br><a href="mailto:lubianka@zgwrp.org.pl">lubianka@zgwrp.org.pl</a></div>
+
+<div>Zapraszamy do Urzędu Gminy codziennie<br>
+poniedziałek, środa czwartek: 7.30 – 15.30<br>
+wtorek: 7.30 – 16.30<br>
+piątek: 7.30 – 14.30</div>
+</div></div><div class="system_anchor obiekt obiekt_akapit" id="akapit_29540"><div>
+<div>
+<div><span class="bold">Urząd Gminy w Łubiance</span><br>
+Aleja Jana Pawła II nr 8<br>
+oraz ul. Toruńska 97<br>
+87-152 Łubianka</div>
+
+<div>NIP 956-18-70-602<br>
+REGON 000539756<br>
+Numer konta: BS w Toruniu - O/Łubianka 60951100002003002149020001</div>
+
+<div><strong>Aby skontaktować się z pracownikami wydziałów prosimy kliknąć <a href="./redir,9478">tutaj</a></strong></div>
+</div>
+</div>
+</div></div><div class="system_float_clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="contact__containers-item">
+                <div class="netadmin__container">
+                    <div class="heading netadmin--hide">
+                        <div class="heading__container">
+                            <h2 class="heading__title">
+                            Awaria
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <div class="contact__scroll-box">
+        <div class="system_float_clear"></div><div><div class="system_anchor obiekt obiekt_akapit" id="akapit_29618"><p><strong><span style="font-size:1.2em;"><span style="font-family:Arial, Helvetica, sans-serif;"><span style="line-height:107%;">Aby zgłosić awarię gminnych urządzeń wodno-kanalizacyjnych prosimy o wybranie numeru z poniższej listy. W przypadku braku połączenia należy wybrać kolejny numer telefonu.</span></span></span></strong></p>
+
+<table class="Table" style="border:medium none;height:100px;" width="511"><tbody><tr><td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">Andrzej Sierocki, kier. wydziału</span></span></span></p>
+			</td>
+			<td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">508-221-372</span></span></span></p>
+			</td>
+		</tr><tr><td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">Marzenna Winiarska</span></span></span></p>
+			</td>
+			<td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">530-442-940</span></span></span></p>
+			</td>
+		</tr><tr><td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">Jerzy Afelt</span></span></span></p>
+			</td>
+			<td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">502-234-457</span></span></span></p>
+			</td>
+		</tr><tr><td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">Tomasz Szreder</span></span></span></p>
+			</td>
+			<td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">502-234-477</span></span></span></p>
+			</td>
+		</tr><tr><td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">Sławomir Wronka</span></span></span></p>
+			</td>
+			<td style="padding:.6pt .6pt .6pt .6pt;">
+			<p style="margin:0cm 0cm 8pt;"><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">502-272-125</span></span></span></p>
+			</td>
+		</tr></tbody></table><table border="0" cellpadding="1" cellspacing="1" style="width:510px;"><tbody><tr><td><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">Dawid Lewandowski                   </span></span></span></td>
+			<td><span style="font-size:11pt;"><span style="line-height:107%;"><span style="font-family:Calibri, sans-serif;">731-732-916</span></span></span></td>
+		</tr></tbody></table><p> </p>
+</div></div><div class="system_float_clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="contact__containers-item">
+                <div class="netadmin__container">
+                    <div class="heading netadmin--hide">
+                        <div class="heading__container">
+                            <h2 class="heading__title">
+                            Film promocyjny
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <div class="contact__scroll-box">
+        <div class="system_float_clear"></div><div><div class="system_anchor obiekt obiekt_akapit" id="akapit_30090"><p style="text-align:center;">⬇️ Kliknij dwa razy ⬇️</p>
+</div><div class="system_anchor obiekt obiekt_obiekt_zewnetrzny" id="obiekt_zewnetrzny_22"><div class="system_margin_auto"><div class="ObiektZewnetrzny"><div id="externalobject_22"><a href="https://www.youtube.com/embed/GxurvdHpG0U" title="obiekt zewnętrzny"><span class="system_italic">[obiekt zewnętrzny] Film promocyjny</span></a></div></div></div></div></div><div class="system_float_clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<!-- END CONTACT -->
+    
+        <!-- BANNERS -->
+<div class="banners" id="banners">
+    <div class="netadmin__container">
+        <div class="heading netadmin--hide">
+            <div class="heading__container">
+                <h2 class="heading__title">Banery</h2>
+            </div>
+        </div>
+        <div class="banners__inner">
+            <div class="banners__content-box">
+                <ul class="banners__list" id="banners__list">
+                <li class="banners__item"><a href="./redir,reklama_redir?lp=237" class="external_blank"><img src="baner,237,urzad-marszalkowski.jpg" width="776" height="276" alt="baner alt 1"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=238" class="external_blank"><img src="baner,238,epuap.jpg" width="600" height="150" alt="baner alt 2"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=239" class="external_blank"><img src="baner,239,profil-zaufany.jpg" width="185" height="80" alt="baner alt 3"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=240" class="external_blank"><img src="baner,240,baner-4.png" width="185" height="67" alt="baner alt 4"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=241" class="external_blank"><img src="baner,241,baner-5.jpg" width="185" height="67" alt="baner alt 5"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=242" class="external_blank" rel="nofollow"><img src="baner,242,ministerstwo-rolnictwo-i-rozwoju-wsi.png" width="178" height="80" alt="baner alt 5"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=243" class="external_blank"><img src="baner,243,wojskowa-komisja-uzupelnien.jpg" width="100" height="100" alt="baner alt 6"></a></li><li class="banners__item"><a href="./redir,reklama_redir?lp=249" class="external_blank"><img src="baner,249,zwiazek-samorzadow-polskich.png" width="185" height="80" alt="&lt;p&gt;&lt;a href=&quot;http://www.samorzadypolskie.pl/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img class=&quot;size-medium wp-image-38&quot; src=&quot;http://www.samorzadypolskie.pl/wp-content/uploads/2019/05/zsp.png&quot; alt=&quot;Związek Samorządów Polskich&quot; /&gt;&lt;/a&gt;&lt;/p&gt;"></a></li>
+                </ul>
+                
+                <div class="controls netadmin--hide-hc">
+                    <div class="">
+                        <div class="pagination">
+                            <div class="play-toggle netadmin--hide">
+                                <button class="play-toggle__btn">
+                                    <span class="fas fa-pause"><!--//--></span><span class="hide">pauza/start</span>
+                                </button>
+                            </div>
+                            <ul class="pagination__list">
+                                <li><!-- init to be replace --></li>
+                            </ul>
+                        </div>
+                        <div class="controls__inner">
+                            <div class="controls__nav netadmin--hide-hc">
+                                <a href="#" class="controls__nav-btn controls__nav-btn--prev">
+                                    <span class="controls__nav-btn-inner">
+                                        <span class="controls__nav-arrow icon"><!-- arrow left --></span>
+                                        <span class="netadmin--hide netadmin--hide-hc">Następny baner</span>
+                                    </span>
+                                </a>
+                                <a href="#" class="controls__nav-btn controls__nav-btn--next">
+                                    <span class="controls__nav-btn-inner">
+                                        <span class="controls__nav-arrow icon"><!-- arrow right --></span>
+                                        <span class="netadmin--hide netadmin--hide-hc">Poprzedni baner</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END BANNERS -->
+        <!-- FOOTER -->
+<div class="footer" id="footer">
+    <div class="netadmin__container">
+        <div class="heading netadmin--hide">
+            <div class="heading__container">
+                <h2 class="heading__title">Stopka strony</h2>
+            </div>
+        </div>
+        <ul class="footer__list" id="footer__list">
+            <li class="footer__item">
+                <p>
+                    <a class="footer__link external_blank" href="https://www.extranet.pl"  rel="noopener" title="Przejdź do strony extranet.pl">
+                        Projekt i wykonanie: extranet                    </a>
+                </p>
+            </li>
+            
+            <li class="footer__item">
+                <p>
+                    <a class="footer__link" href="./9409,struktura-serwisu">
+                    Struktura serwisu
+                    </a>
+                </p>      
+            </li>   
+                
+            <li class="footer__item">
+                <p>
+                    netadmin 7.13                </p>
+            </li>
+
+            
+            <li class="footer__item">
+                <p>
+                    <a class="footer__link" href="./9410,polityka-prywatnosci">
+                    Polityka prywatności
+                    </a>
+                </p>      
+            </li>   
+                        </ul>
+    </div>
+</div>
+<!-- END FOOTER -->
+</div>
+<!-- END netadmin -->
+
+
+
+<SCRIPT TYPE="text/javascript"><!--//--><![CDATA[//><!--
+$.fancybox.defaults.lang='pl';$.fancybox.defaults.caption=function(instance, item) {
+		return $(this).attr('title');
+	};
+$().fancybox({
+	selector: 'a.fancybox,a[rel=fancybox]',
+	loop: false,
+	transitionEffect: false
+});
+$('table.sortuj,table.sortable').addClass('tabela');
+dataTablesInit('table.tabela');
+$('<link/>', {
+	rel: 'stylesheet', type: 'text/css', media: 'screen', href: 'css,css/specific.css'
+}).appendTo('head');
+$('<link/>', {
+		rel: 'stylesheet', type: 'text/css', media: 'screen', href: 'css,css/speech-input.css'
+	}).appendTo('head');
+$('<script/>', {
+		async: 'async', src: 'js,js/speech-input-compress.js'
+	}).appendTo('head');
+$('input[type=text],textarea').not('[readonly],[disabled],.nospeech').addClass('speech-input');
+$(document.body).prepend(
+			'<form action="https://www.lubianka.pl/9411,wszystkie-aktualnosci" method="post">'+
+				'<div id="cookie_info_box">'+
+					'<div id="cookie_info_box2">'+
+						'<span id="cookie_info_box_content">'+
+							'<p>Ta strona używa mechanizmu ciasteczek. Więcej informacji oraz przykład jego wyłączania dostępny jest np. na <a href="http://www.extranet.pl/wsparcie/ciasteczka">tej stronie<'+'/a>. Kontynuując korzystanie ze strony zgadzasz się na działanie mechanizmu ciasteczek.<'+'/p>'+
+						'<'+'/span>'+'<button type="button" class="cookie_info_button" id="cookie_info_close">'+
+									'Zamknij'+
+								'<'+'/button>'+'<'+'/div>'+
+				'<'+'/div>'+
+			'<'+'/form>'
+			);
+			$('#cookie_info_close').click(function(e) {
+				e.preventDefault();
+				$('#cookie_info_box').fadeToggle();
+			});
+		
+$(function(){ ExternalLinks(); $('.js_hide').addClass('hide hc_hide'); })
+
+    $(window).on('load', function()
+	{
+	    setTimeout(function()
+	    {
+
+	        let additionalOffset = 0;
+
+	        if ($(window).width() > 1199 && !isSetWcagFontSize()) {
+
+	            let navbarHeight = $('#navbar').outerHeight();
+                let submenuList = $('#navbar').find('.menu__sub-list:first-of-type');
+                let submenuListHeight = 0;
+
+                if (submenuList.length > 0) {
+                    submenuListHeight = submenuList.outerHeight();
+                }
+
+                additionalOffset = navbarHeight + submenuListHeight
+	        }
+
+            goToSectionFromSubpageToHomepage(
+            {
+                selectorHashWithoutId   : '#section--',
+                additionalOffset        :  additionalOffset,
+                duration                : 500
+            });
+
+	    }, 1000);
+	});
+    
+
+		var hasTouch = false;
+		if (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
+			hasTouch = true;
+		}
+	
+
+	//-------------------------------------------------------------------------
+	//                      REPAIR ALL CAROUSELS ETC
+	//-------------------------------------------------------------------------
+	$(window).on('load', function()
+	{
+		$(this).trigger('resize');
+		$(this).trigger('scroll');
+
+	});
+	
+
+	//-------------------------------------------------------------------------
+	//                   CHECK IF IS SET BIGGER FONT-SIZE
+	//-------------------------------------------------------------------------
+	function isSetWcagFontSize() {
+		return ( $('body.fontsize_big').length > 0 || $('body.fontsize_bigger').length > 0 );
+	}
+	
+
+        
+        //-------------------------------------------------------------------------
+        //                          INITIAL MENU RWD
+        //-------------------------------------------------------------------------
+        $(function() 
+        {                              
+            let menu = $('#menu-rwd');
+            let menuItems = menu.find('.menu-rwd__list-item');
+            
+            setClassForSubpageMenu(menuItems, '.menu-rwd__sub-list', 'menu--has-subpages');
+            insertBtnSubList(menu, '.menu--has-subpages');
+            toggleMenu(menu, '.menu-rwd__sub-list-btn', 'menu-rwd__sub-list--show');
+            selectCurrentMenuPath(menu, '.menu--selected > .menu--has-subpages');
+        });
+
+
+        //-------------------------------------------------------------------------
+        //                      OPEN/CLOSE BOX WITH RWD MENU
+        //-------------------------------------------------------------------------
+        $(function() 
+        {
+            $('#menu-rwd__btn-toggle').click(function(e){
+                e.preventDefault();
+                $(this).toggleClass('menu-rwd__btn-toggle--selected');
+                $('.icon', this).toggleClass('icon--bars icon--times')
+                $('#menu-rwd__box').stop(true,false).fadeToggle(500);
+            });
+
+        });
+
+        
+        //-------------------------------------------------------------------------
+        //                      SET/DESTROY mCustomScrallbar
+        //-------------------------------------------------------------------------
+        $(function() 
+        {
+            let menuBox = $('#menu-rwd__inner');
+            let menuBoxInner = $('#menu-rwd__box');
+            let btnMenu = $('#menu-rwd__btn-toggle');
+            
+            if (!isSetWcagFontSize()) {
+                enquire.register('screen and (max-width: 992px)',{
+                    match: function(){
+                        setmCustomScrollBar(menuBox);
+                        menuHeight('#menu-rwd__box','#menu-rwd__inner', 'set');
+                    },
+    
+                    unmatch: function(){
+                        destroyCustomScrollBar(menuBox);
+                        menuHeight('#menu-rwd__box','#menu-rwd__inner','remove');
+                        menuBoxInner.removeAttr('style');
+                        btnMenu.find('.icon').removeClass('icon--times').addClass('icon--bars');
+                    }
+                });
+            } else {
+                setmCustomScrollBar(menuBox);
+                menuHeight('#menu-rwd__box','#menu-rwd__inner', 'set');
+            }
+        });
+    
+
+
+    //-------------------------------------------------------------------------
+    //                      INSERT BTN SUBPAGE BEFORE UL TAG
+    //-------------------------------------------------------------------------
+    function insertBtnSubList(menu, hasSubpageSelector) 
+    {
+        menu.find(hasSubpageSelector).find('ul').before(createBtnSubList());
+    }
+
+    //-------------------------------------------------------------------------
+    //                      SELECT CURRENT MENU PATH
+    //-------------------------------------------------------------------------
+    function selectCurrentMenuPath(menu, hasSubpageSelector) 
+    {
+        menu.find(hasSubpageSelector).trigger('click');
+    }
+
+    //-------------------------------------------------------------------------
+    //                          TOGGLE SUBMENU
+    //-------------------------------------------------------------------------
+    function toggleMenu(menu, subListBtnSelector, subListBtnClassShow)
+    {
+        menu.find(subListBtnSelector).on('click', function(e){
+            e.preventDefault();
+            $('.icon', this).toggleClass('icon--bars icon--times');
+            $(this).next('ul').toggleClass(subListBtnClassShow);
+        });
+    }
+
+    //-------------------------------------------------------------------------
+    //                      CREATE BTN RWD FOR SUBLIST
+    //-------------------------------------------------------------------------
+    function createBtnSubList()
+    {
+        let RwdButtonMenu = '';
+        RwdButtonMenu += '<button class="menu-rwd__sub-list-btn">';
+        RwdButtonMenu += '<span class="icon icon--bars"><!-- // --></span>';
+        RwdButtonMenu += '<span class="netadmin--hide netadmin--hide-hc">Pokaż/ukryj poddziały</span>';
+        RwdButtonMenu += '</button>';
+        return RwdButtonMenu;
+    }
+
+    //-------------------------------------------------------------------------
+    //                      SET APPROPRIATE MENU HEIGHT
+    //-------------------------------------------------------------------------
+    function menuHeight(menuBox, menuBoxWrapper, trigger)
+    {
+        if (trigger == 'set') {
+            $(window).on('resize.setMenuHeight', function(){
+                let padding = $(menuBox).innerHeight() - $(menuBox).height();
+                let tmp = $(window).height() - padding;
+                $(menuBoxWrapper).height(tmp);
+            });
+        } else if (trigger == 'remove') {
+            $(window).off('resize.setMenuHeight');
+            $(menuBoxWrapper).height('');
+        } else {
+            console.warn('Błędny parametr trigger w funkcji menuHeight');
+        }
+        
+    }
+    
+    //-------------------------------------------------------------------------
+    //                      SET mCustomScrallbar
+    //-------------------------------------------------------------------------
+    function setmCustomScrollBar(menuBox)
+    {
+        menuBox.mCustomScrollbar({
+            scrollInertia: 500, // 0 - wylaczone
+            theme: 'minimal-dark' // minimal
+        });
+    }
+
+    //-------------------------------------------------------------------------
+    //                      DESTROY mCustomScrallbar
+    //-------------------------------------------------------------------------
+    function destroyCustomScrollBar(menuBox) 
+    {
+        menuBox.mCustomScrollbar('destroy');
+    }
+    
+    //-------------------------------------------------------------------------
+    //           SET CLASS TO IDENTITY WHICH LI HAS A SUBPAGES      
+    //-------------------------------------------------------------------------
+    function setClassForSubpageMenu(menuItems, subListSelector, hasSubpageClass)
+    {
+        menuItems.each(function(){
+            let _this = $(this);
+            if (_this.find($(subListSelector)).length > 0) {
+                _this.addClass(hasSubpageClass);
+            }
+        });
+    }
+    
+
+        //-------------------------------------------------------------------------
+        //                  CLEAR PLACEHOLDER ON SEARCH INPUT
+        //-------------------------------------------------------------------------
+        $('#search-form__field--input').on('focusin', function()
+        {
+            if (this.defaultValue == this.value) {
+                this.value=''
+            }
+        });
+    
+
+    //-------------------------------------------------------------------------
+    //                      CLEAR CLASSES ON RWD
+    //-------------------------------------------------------------------------
+    $(function(){
+        let wcag = $('#wcag');
+        let wcagTable = wcag.find('.wcag--table');
+        let wcagCell  = wcag.find('.wcag--cell');
+        let wcagCellWidth  = wcag.find('.wcag--cell-width');
+    
+        if (wcagTable.length > 0) {
+            if (!isSetWcagFontSize()) {
+                enquire.register('screen and (max-width: 992px)', {
+                    match: function(){
+                        wcagTable.removeClass('wcag--table');
+                        wcagCell.removeClass('wcag--cell');
+                        wcagCellWidth.removeClass('wcag--cell-width');
+                    },
+    
+                    unmatch: function() {
+                        wcagTable.addClass('wcag--table');
+                        wcagCell.addClass('wcag--cell');
+                        wcagCellWidth.addClass('wcag--cell-width');
+                    }
+                });
+            } else {
+                wcagTable.addClass('wcag--table');
+                wcagCell.addClass('wcag--cell');
+                wcagCellWidth.addClass('wcag--cell-width');
+            }
+        }
+    });
+    
+
+                    var _tmp = $('.kalendarium_wyszukiwarka-pole-szukaj label').text();
+                    if (_tmp.length > 0) {
+                        $('.kalendarium_wyszukiwarka-pole-szukaj input').attr('placeholder', _tmp);
+                    }
+                
+
+                     $('.system_datetimepicker').datetimepicker({
+                        language: 'pl',
+                        startView: 2,
+                        minView: 2,
+                        format: 'yyyy-mm-dd', // yyyy-mm-dd hh:ii
+                        autoclose: true,
+                        todayBtn: true,
+                        clearBtn: true,
+                        // startDate: '2013-02-14T10:00:00Z',
+                        minuteStep: 5,
+                        todayHighlight: true
+                    });
+                
+
+                        $(function(){
+
+                            var amountToScroll;
+
+                            // count initial amount of items
+                            if (
+                                typeof(window.matchMedia)!='undefined' &&
+                                window.matchMedia('screen and (max-width: 568px)').matches
+                            ) {
+                                amountToScroll = 2;
+                            } else
+                            if (
+                                typeof(window.matchMedia)!='undefined' &&
+                                window.matchMedia('screen and (max-width: 768px) and (min-width: 568px)').matches
+                            ) {
+                                amountToScroll = 3;
+                            } else
+                            if (
+                                typeof(window.matchMedia)!='undefined' &&
+                                window.matchMedia('screen and (max-width: 1024px) and (min-width: 768px)').matches
+                            ) {
+                                amountToScroll = 4;
+                            } else {
+                                amountToScroll = 5;
+                            }
+
+                            // RWD change amount of items
+                            enquire.register('screen and (max-width: 568px)', {
+                                match : function() {
+
+                                    $('.kalendarium_wykaz_dat_wydarzen ul.lista').trigger( 'configuration', {
+                                        scroll: 2,
+                                        items: {
+                                            visible: 2
+                                        },
+                                    });
+
+                                },
+                                unmatch : function() {},
+                                setup : function() {},
+                            });
+
+                            enquire.register('screen and (max-width: 768px) and (min-width: 568px)', {
+                                match : function() {
+
+                                    $('.kalendarium_wykaz_dat_wydarzen ul.lista').trigger( 'configuration', {
+                                        scroll: 3,
+                                        items: {
+                                            visible: 3
+                                        },
+                                    });
+
+                                },
+                                unmatch : function() {},
+                                setup : function() {},
+                            });
+
+                            enquire.register('screen and (max-width: 1024px) and (min-width: 768px)', {
+                                match : function() {
+
+                                    $('.kalendarium_wykaz_dat_wydarzen ul.lista').trigger( 'configuration', {
+                                        scroll: 4,
+                                        items: {
+                                            visible: 4
+                                        },
+                                    });
+
+                                },
+                                unmatch : function() {},
+                                setup : function() {},
+                            });
+
+                            enquire.register('screen and (min-width: 1024px)', {
+                                match : function() {
+
+                                    $('.kalendarium_wykaz_dat_wydarzen ul.lista').trigger( 'configuration', {
+                                        scroll: 5,
+                                        items: {
+                                            visible: 5
+                                        },
+                                    });
+
+                                },
+                                unmatch : function() {},
+                                setup : function() {}
+                            });
+
+                            // run carousel
+                            $('.kalendarium_wykaz_dat_wydarzen ul.lista').carouFredSel({
+                                direction: 'left',
+                                scroll: amountToScroll,
+                                // scroll: 1,
+                                responsive: true,
+                                width: '100%',
+                                height: 'variable', // auto | variable // li width must be set in css
+                                prev: '.kalendarium_wykaz_dat_wydarzen .nav .nav-prev',
+                                next: '.kalendarium_wykaz_dat_wydarzen .nav .nav-next',
+                                circular: false,
+                                infinite: false,
+                                auto: false,
+                                items: {
+                                    // width: 333,
+                                    visible: amountToScroll,
+                                    height: 'variable', // auto | variable // li width must be set in css
+                                },
+                                swipe: {
+                                    onTouch: true
+                                }
+                            });
+
+                        });
+                    
+
+                    $(function(){
+                        $('.kalendarium_wykaz_wydarzen .kalendarium_wydarzenie-wykaz-pozycja a').each(function(){
+                            if ($('.kalendarium_wydarzenie-wykaz-obrazek img', this).length > 0) {
+                                _img = $('.kalendarium_wydarzenie-wykaz-obrazek img', this).attr('src');
+                                $('.kalendarium_wydarzenie-wykaz-obrazek', this).hide();
+                                $(this).css({'background-image':'url('+_img+')'});
+                            }
+                        });
+                    })
+                
+
+                    $(function(){
+                        $('.kalendarium_wykaz_wydarzen a')
+                            .on('mouseenter focusin', function(){
+                                $(this).find('.kalendarium_wydarzenie-wykaz-link-box').clearQueue().animate({
+                                    'min-height' : '10em'
+                                }, 500)
+                            })
+                            .on('mouseleave focusout', function(){
+                                $(this).find('.kalendarium_wydarzenie-wykaz-link-box').clearQueue().animate({
+                                    'min-height' : '0'
+                                }, 500);
+                            });
+                    });
+                
+
+            
+            $(function() {
+                // init 
+                extraFeaturesCalendar();
+            });
+            
+            function extraFeaturesCalendar()
+            {
+                let dataCaption = $('#kalendariumBox .captionBox .data');
+                let arrDate = (dataCaption.text().trim()).split(' '); // save month and year in seperate cell
+                let html = '<span class="miesiac">'+arrDate[0]+'<\/span><span class="rok">'+arrDate[1]+'<\/span>';
+
+                dataCaption.empty().prepend(html);
+
+                // set arrows next/prev
+                $('#kalendariumBox .captionBox').find('.kalendarium2_poprzedni_a').append('<span class="icon icon--arrow-left">');
+                $('#kalendariumBox .captionBox').find('.kalendarium2_nastepny_a').append('<span class="icon icon--arrow-right">')
+            }
+        
+            
+        
+
+        $(function(){
+        //-------------------------------------------------------------------------
+        //               SWAP CONTENT (STICKY ICON <=> MIAN CONTENT)
+        //-------------------------------------------------------------------------
+                if (typeof swapContent === 'function') {
+                    let obj = {
+                            sourceParent    : '#sticky-icons .sticky-icons--calendar-outer',
+                            sourceElement   : '#calendar',
+                            target          : '#calendar-rwd__box',
+                            breakpoint      : '992px',
+                    };
+                    
+                   if (isSetWcagFontSize()) {
+                        obj.breakpoint = '1992px'
+                    }
+                    
+                    swapContent(obj);
+                } else {
+                    console.error('[CUSTOM WARNING]: function swapContent doesn\'t exist');
+                }
+            });
+        
+
+            $(function()
+            {
+            //-------------------------------------------------------------------------
+            //              STRETCH CALENDAR TO BOTTOM EDGE
+            //-------------------------------------------------------------------------
+            
+            if (!isSetWcagFontSize()) {
+                $(window).on('resize.stretchCalendarToBottomEdge', function()
+                {
+                    if ($(window).width() > 992) {
+                    
+                        let iconsPositionTop = parseInt($('#sticky-icons').find('.sticky-icons--position-right').css('top'), 10);
+                        let icoCalendarOffsetToTopList = $('#calendar').closest('.sticky-icons__item').position().top;
+                        let calendarStretchHeight = $(window).height() - (iconsPositionTop + icoCalendarOffsetToTopList);
+                        
+                        $('#calendar').height(calendarStretchHeight);
+                    } else {
+                        $('#calendar').height('');
+                    } 
+
+                }).trigger('resize.stretchCalendarToBottomEdge');    
+                
+                enquire
+                    .register('screen and (min-width: 993px)', 
+                    {
+                        match: function()
+                        {
+                            $('#calendar').mCustomScrollbar({
+                                scrollInertia: 500, // 0 - wylaczone
+                                theme: 'minimal-dark' // minimal
+                            });
+                        }
+                    })
+                    .register('screen and (max-width: 992px)', 
+                    {
+                        match: function()
+                        {
+                            $('#calendar').mCustomScrollbar('destroy');
+                            
+                        }
+                    });
+                }
+            });
+        
+
+        //-------------------------------------------------------------------------
+        //                 CHECK THAT IF FONTSIZE BIG EXIST
+        //-------------------------------------------------------------------------
+        function isSetWcagFontSize() {
+            return ( $('body.fontsize_big').length > 0 || $('body.fontsize_bigger').length > 0 );
+        }
+    
+        //-------------------------------------------------------------------------
+        //                     SHOW/HIDE STICKY ICONS BOX
+        //-------------------------------------------------------------------------
+        $(function()
+        {
+            $('#sticky-icons__btn').on('click', function()
+            {
+                $('.sticky-icons__box').stop(true,false).fadeToggle(500);
+            });
+        });
+    
+        //-------------------------------------------------------------------------
+        //           REMOVE ATTR STYLE FROM BOX WHEN THEIR ARE NOT ON RWD
+        //-------------------------------------------------------------------------
+        $(function()
+        {
+            if (!isSetWcagFontSize()) {
+                enquire.register('screen and (min-width: 993px)',
+                    {
+                        match: function(){
+                            $('.sticky-icons__box').removeAttr('style');
+                        },
+                    });
+            }
+    
+        });
+    
+        //-------------------------------------------------------------------------
+        //                 ADD CLASS TO GENERATE IMG TO STICKY ICONS
+        //-------------------------------------------------------------------------
+        function findIcoClass(action)
+        {
+            $('#sticky-icons').find('.sticky-icons__item').each(function(){
+                let _thisIco = $(this);
+                let icoImgClasses = $(this).find('.sticky-icons__ico').attr('class');
+                let arrClasses = icoImgClasses.split(' ');
+                let imgClass;
+    
+                arrClasses.forEach(function(item){
+                    if (item.indexOf('sticky-icons__ico--') == 0){
+                        if (action === 'add') {
+                            $(_thisIco).find('.sticky-icons__link').addClass(item);
+                        } else if (action === 'remove'){
+                            $(_thisIco).find('.sticky-icons__link').removeClass(item);
+                        } else {
+                            console.warn('Błędny parametr');
+                        }
+                    }
+                });
+            });
+        }
+    
+  
+        $(function()
+        {
+            if (!isSetWcagFontSize()) {
+                enquire.register('screen and (max-width: 992px)', {
+                    match: function(){
+                        findIcoClass('add');
+                    },
+    
+                    unmatch: function(){
+                        findIcoClass('remove');
+                    }
+                });
+            } else {
+                findIcoClass('add');
+            }
+        });
+    
+    
+    
+        //-------------------------------------------------------------------------
+        //                    PUT STICKY ICONS TO RIGHT/LEFT
+        //-------------------------------------------------------------------------
+        $(function(){
+            $('#sticky-icons').find('.sticky-icons__ico:not(.sticky-icons__ico--direct)').on('click', function(e){
+                e.preventDefault();
+                let content = $(this).closest('.sticky-icons__item').find('.sticky-icons__content');
+                let offsetDefault = $(this).outerWidth();
+                let positionContent;
+    
+                content.toggleClass('sticky-icons__content--active');
+                positionContent = (content.hasClass('sticky-icons__content--active')) ? -content.outerWidth(): offsetDefault;
+    
+    
+                //-------------------------------------------------------------
+                //              ICONS ON THE RIGHT SITE
+                //-------------------------------------------------------------
+                if ($(this).closest('.sticky-icons__box').hasClass('sticky-icons--position-right')) {
+                    if (content.hasClass('sticky-icons__content--active')) {
+                        content.addClass('sticky-icons__content--visible');
+                        content.stop(true, false).animate({
+                            'left': positionContent
+                        }, 500);
+                    } else {
+                        content.stop(true, false).animate({
+                            'left': positionContent
+                        }, 500, function(){
+                            $(this).removeClass('sticky-icons__content--visible');
+                        });
+                    }
+                }
+    
+                if ($(this).closest('.sticky-icons__box').hasClass('sticky-icons--position-left')) {
+                    //-------------------------------------------------------------
+                    //              ICONS ON THE LEFT SITE
+                    //-------------------------------------------------------------
+                    if (content.hasClass('sticky-icons__content--active')) {
+                        content.addClass('sticky-icons__content--visible');
+                        content.stop(true, false).animate({
+                            'right': positionContent
+                        }, 500);
+                    } else {
+                        content.stop(true, false).animate({
+                            'right': positionContent
+                        }, 500, function(){
+                            $(this).removeClass('sticky-icons__content--visible');
+                        });
+                    }
+                }
+            });
+        });
+    
+    
+        //-------------------------------------------------------------------------
+        //              REMOVE CLASS POSITION RIGHT FROM STICKY ICONS
+        //-------------------------------------------------------------------------
+        $(function(){
+            let el = $('#sticky-icons').find('.sticky-icons--position-right');
+            if (el.length > 0) {
+    
+    
+                // swap content
+                let obj = {
+                    sourceParent : $('.sticky-icons--position-right'),
+                    sourceElement: $('.sticky-icons--position-right').find('.sticky-icons__list'),
+                    target: $('.sticky-icons--position-left').find('.sticky-icons__list'),
+                    breakpoint: '992px'
+                };
+    
+    
+                if (!isSetWcagFontSize()) {
+                    swapContent(obj);
+    
+                    enquire.register('screen and (max-width: 992px)', {
+                        match: function(){
+                            el.removeClass('sticky-icons--position-right').addClass('sticky-icons--position-left');
+                        },
+    
+                        unmatch: function(){
+                            el.addClass('sticky-icons--position-right').removeClass('sticky-icons--position-left');
+                        }
+                    });
+                } else {
+                    obj.breakpoint = '1920px';
+                    
+                    swapContent(obj);
+                    el.removeClass('sticky-icons--position-right').addClass('sticky-icons--position-left');
+                }
+            }
+        });
+    
+    
+    //-------------------------------------------------------------------------
+        //                      CLEAR CLASSES ON RWD
+        //-------------------------------------------------------------------------
+        $(function(){
+            let wcag = $('#wcag');
+            let wcagTable = wcag.find('.wcag--table');
+            let wcagCell  = wcag.find('.wcag--cell');
+            let wcagCellWidth  = wcag.find('.wcag--cell-width');
+
+            if (wcagTable.length > 0) {
+                if (!isSetWcagFontSize()) {
+                    enquire.register('screen and (max-width: 992px)', {
+                        match: function(){
+                            wcagTable.removeClass('wcag--table');
+                            wcagCell.removeClass('wcag--cell');
+                            wcagCellWidth.removeClass('wcag--cell-width');
+                        },
+
+                        unmatch: function() {
+                            wcagTable.addClass('wcag--table');
+                            wcagCell.addClass('wcag--cell');
+                            wcagCellWidth.addClass('wcag--cell-width');
+                        }
+                    });
+                } else {
+                    wcagTable.addClass('wcag--table');
+                    wcagCell.addClass('wcag--cell');
+                    wcagCellWidth.addClass('wcag--cell-width');
+                }
+            }
+        });
+
+        //-------------------------------------------------------------------------
+        // ADD APPROPRIATE HEIGHT TO WCAG AND SEARCH FORM WHEN ADDED TO STICKY ICONS
+        //-------------------------------------------------------------------------
+        $(function(){
+            let borderTopWidth = parseInt($('.sticky-icons--border').css('border-top-width'), 10);
+            let borderBottomWidth = parseInt($('.sticky-icons--border').css('border-bottom-width'), 10);
+            $(window).on('resize', function(){
+                if (!isSetWcagFontSize()) {
+                    if ($(this).width() > 992) { 
+                        let heightItemSearch = $('#search-form').parents('.sticky-icons__item').outerHeight() - borderTopWidth - borderBottomWidth;
+                        $('#search-form').find('.search-form--table .search-form__field').css({'height':heightItemSearch+'px'});
+
+                        let heightItemWCAG = $('#wcag').parents('.sticky-icons__item').outerHeight() - borderTopWidth - borderBottomWidth;
+                        $('#wcag').find('.wcag--table .wcag__link').css({'height':heightItemWCAG+'px'});
+                        $('#wcag').find('.wcag--table .wcag__txt').css({'line-height':heightItemWCAG+'px'});
+                    } else {
+                        $('#search-form').find('.search-form--table .search-form__field').css({'height':'50px'});
+                        $('#wcag').find('.wcag--table .wcag__link').css({'height':'50px'});
+                        $('#wcag').find('.wcag--table .wcag__txt').css({'line-height':'50px'});
+                    }
+                } else {
+                    $('#search-form').find('.search-form--table .search-form__field').css({'height':'50px'});
+                    $('#wcag').find('.wcag--table .wcag__link').css({'height':'50px'});
+                    $('#wcag').find('.wcag--table .wcag__txt').css({'line-height':'50px'});
+                }
+            }).trigger('resize');
+        });
+    
+    
+    
+        //-------------------------------------------------------------------------
+        //  ADD SCROLLBAR TO STICKY ICON ON RWD AND COMBINE TWO ICO SECTIONS
+        //-------------------------------------------------------------------------
+        $(function()
+        {
+            if (!isSetWcagFontSize()) {
+                enquire.register('screen and (max-width: 992px)',
+                    {
+                        match: function()
+                        {
+    
+                            $(window).on('resize.setHeightOnIconsOnRWD', function()
+                            {
+                                let padding = $('.sticky-icons__inner').closest('.sticky-icons__box').innerHeight() - $('.sticky-icons__inner').closest('.sticky-icons__box').height();
+                                $('.sticky-icons__inner').height($(window).height()-padding);
+                            }).trigger('resize.setHeightOnIconsOnRWD');
+                            
+                            $('.sticky-icons__inner').mCustomScrollbar({
+                                scrollInertia: 500, // 0 - wylaczone
+                                theme: 'minimal-dark' // minimal
+                            });
+                            
+                            
+                        },
+                        unmatch: function()
+                        {
+                            $('.sticky-icons__inner').height('').mCustomScrollbar('destroy');
+                            $(window).off('resize.setHeightOnIconsOnRWD');
+                        }
+                    });
+            } else {
+                let padding = $('.sticky-icons__inner').closest('.sticky-icons__box').innerHeight() - $('.sticky-icons__inner').closest('.sticky-icons__box').height();
+    
+                $('.sticky-icons__inner').height($(window).height()-padding);
+                $('.sticky-icons__inner').mCustomScrollbar({
+                    scrollInertia: 500, // 0 - wylaczone
+                    theme: 'minimal-dark' // minimal
+                });
+                
+                $(window).on('resize.setHeightOnIconsOnRWD', function()
+                {
+                    let padding = $('.sticky-icons__inner').closest('.sticky-icons__box').innerHeight() - $('.sticky-icons__inner').closest('.sticky-icons__box').height();
+                    $('.sticky-icons__inner').height($(window).height()-padding);
+                }).trigger('resize.setHeightOnIconsOnRWD');
+            }
+            
+            
+            
+        });
+        
+
+    //-------------------------------------------------------------------------
+    //                          SET FOCUS CLASS
+    //-------------------------------------------------------------------------
+    $(function()
+    {
+        let menu = $('#menu-bottom');
+        menu.find('a').on('focusin focusout', function() {
+            $(this).parents('li').toggleClass('menu-bottom--focused');
+        });
+    });
+
+
+    //-------------------------------------------------------------------------
+    //               ADD CLASS TO CLOSE/OPEN MENU BY TAB - WCAG
+    //-------------------------------------------------------------------------
+    $(function()
+    {
+        $('#menu-bottom a').on('mouseenter focusin touchstart', function() {
+            var _this = $(this);
+            var windowWidth = $(window).width();
+            var subNav = _this.siblings('.menu-bottom__sub-list');  //nie mozna stosować marginesow
+
+            if (subNav.length > 0)
+            {
+                var widthItem = subNav.outerWidth(); // nie mozna stosować marginesow
+                var offsetLeft = subNav.offset().left;
+
+                var offsetRightBorderItem = offsetLeft + widthItem; //odsuniecie elementu od lewej krawedzi monitora plus jego szerokosc
+                var offsetRight = windowWidth - offsetRightBorderItem;
+
+                if (offsetRight < 0) {
+                    _this.parent().find('.menu-bottom__sub-list').addClass('menu-bottom__sub-list--left');
+                }
+
+                if (offsetLeft <= 0) {
+                    _this.parent().find('.menu-bottom__sub-list').removeClass('menu-bottom__sub-list--left');
+                }
+            }
+        });
+    });
+
+    //-------------------------------------------------------------------------
+    //                      LOGIC MENU
+    //-------------------------------------------------------------------------
+    $(function()
+    {
+        let menu = $('#menu-bottom');
+        let menuItems = menu.find('.menu-bottom__list-item');
+
+        setClassForSubpageMenu(menuItems, '.menu-bottom__sub-list', 'menu-bottom--has-subpages');
+        selectCurrentMenuPath(menu, '.menu-bottom--selected > .menu-bottom--has-subpages');
+    });
+
+
+    
+
+
+		/*************************
+	 			KONSTRUKTOR
+		*************************/
+
+		function Newses(obj) {
+
+			this.getCorrectNewsPage();
+
+			if( typeof obj !== 'undefined' ) {
+				for( let i in obj ) {
+					if( obj.hasOwnProperty(i) ) {
+						this[i] = obj[i];
+					}
+				}
+			}
+
+			/**
+			*  Wywołania umieszczone w konstruktorze ze względu na to, że
+			*  strona_newsowa.php buduje i wyświetla newsy w jednym pliku
+			*  w przyszłości należałoby rozgraniczyć budowanie i wywołanie w osobne pliki
+			*/
+
+			this.setImgDimensions();
+			this.createDefaultImg();
+			this.setImgPosition();
+			this.changeImgToBg();
+			this.setRWD();
+			this.setClassToImgCol();
+		}
+
+		/***************************************
+					WŁAŚCIWOŚCI
+		***************************************/
+
+		/**
+		* Przełącznik wyboru strony newsowej  new/old
+		*/
+		Newses.prototype.oldNewsesPage = false;
+
+
+		/**
+		* Url do domyśnego obrazka
+		*/
+		Newses.prototype.defaultImgSrc = './jpg,skory/site_thumb.jpg';
+
+
+		/**
+		* Domyślna wartość background-size dla obrazka
+		*/
+		Newses.prototype.imgBgSize = 'cover';
+
+
+		/**
+		* Domyślna wartość background-size dla obrazka domyślnego
+		*/
+		Newses.prototype.defaultImgBgSize = 'contain';
+
+
+		/**
+		* Domyślna wartość breakpointu dla RWD
+		*/
+		Newses.prototype.defaultBreakpoint = '768px';
+
+
+		/**
+	 	* Style dla domyślnego obrazka generowanego, gdy redaktor nie dodał żadnego
+		*/
+		 Newses.prototype.defaultImgStyles = '';
+
+
+		/**
+		* Style dla obrazków dodanych przez redaktorów
+		*/
+		Newses.prototype.imgStyles = {'width': '400px !important'};
+
+
+		/**
+		* Przełącznik do zmiany img na background
+		*/
+		Newses.prototype.displayImgAsBg = true;
+
+
+		/**
+		* Przełącznik do zmiany img na background
+		*/
+		Newses.prototype.setDefaultImg = true;
+
+
+		/**
+		* Domyślna klasa dla float left
+		*/
+		Newses.prototype.floatLeftClass = 'system_float_left';
+
+
+		/**
+		* Domyślna klasa dla float right
+		*/
+		Newses.prototype.floatRightClass = 'system_float_right';
+
+
+		/**
+		*  Domyślne klasy dla domyślnego obrazka
+		*/
+		Newses.prototype.defaultImgClasses = 'system_border0 news_obrazek system_float_left';
+
+
+		/***************************************
+		 				METODY
+		***************************************/
+
+		/**
+		* Domyślne ustawienia dla nowej i starej strony newsowej
+		* W razie indywidualnej strony newsowej należy te parametry odpowiednio skonfigurować
+		*/
+		Newses.prototype.getCorrectNewsPage = function(){
+			if (this.oldNewsesPage) {
+				this.newsBoxContainer	= '.news_box';
+				this.imgContainer 		= '.news_obrazek_link';
+				this.newsColImg			= '.news_obrazek_link';
+				this.newsColContent		= '.news_tekst';
+
+				this.displayImgAsBg 	= false;
+			} else {
+				this.newsBoxContainer	= '#wrapperSectionAllNews .news_box';
+				this.imgContainer 		= '.img_src';
+				this.newsColImg			= '.news_column.img';
+				this.newsColContent		= '.news_column.content';
+			}
+		};
+
+
+		/**
+		* Wykonanie funkcji setImgAsBackground()
+		*/
+		Newses.prototype.changeImgToBg = function(){
+
+			if(this.displayImgAsBg) {
+				this.setImgAsBg();
+			}
+		};
+
+
+		/**
+		* Zamiana img na background (LOGIKA)
+		*/
+		Newses.prototype.setImgAsBg = function(){
+			let _this = this; //get constructor obj
+
+				$(_this.newsBoxContainer).each(function(index, item){
+					let imgEl = $(item).find( _this.imgContainer +' img');
+					let imgBgSize;
+					let imgSrc;
+
+
+					if( imgEl.hasClass('img-created') === false) {
+						imgSrc= $(imgEl).attr('src');
+						imgBgSize = _this.imgBgSize;
+					} else {
+						imgSrc= _this.defaultImgSrc;
+						imgBgSize = _this.defaultImgBgSize;
+					}
+
+					_this.hideImg($(imgEl));
+
+					$(item).find(_this.newsColImg).css({
+						'background-image' : 'url('+imgSrc+')',
+						'background-size'  : imgBgSize
+					});
+				});
+		};
+
+
+		/**
+		* Ustawienie odpowiedniej klasy na kolumnie z IMG
+		*/
+		Newses.prototype.setClassToImgCol = function(){
+			let _this = this; //get constructor obj
+
+			$(_this.newsBoxContainer).each(function(index, item){
+
+				let imgEl = $(item).find( _this.imgContainer +' img');
+				let imgCol = $(item).find(_this.newsColImg);
+
+				if(_this.displayImgAsBg) {
+
+					$(imgCol).addClass('img2bg');
+
+					if( $(imgEl).hasClass(_this.floatLeftClass) ) {
+						$(imgCol).addClass('bg-float-left');
+					} else if ($(imgEl).hasClass(_this.floatRightClass) ) {
+						$(imgCol).addClass('bg-float-right');
+					} else {
+						$(imgCol).addClass('bg-no-float');
+					}
+				} else {
+					$(imgCol).addClass('img-is-visible');
+				}
+			});
+
+		};
+
+
+		/**
+		* Określenie pozycji zdjęcia na podstawie klas
+		*/
+		Newses.prototype.setImgPosition = function() {
+
+			let _this = this; //get constructor obj
+			if(_this.oldNewsesPage === false) {
+
+				$(_this.newsBoxContainer).each(function(index, item){
+					// if news have image we check its position
+					if ( $(item).length > 0) {
+						if ($(item).find( _this.imgContainer +' img').hasClass(_this.floatLeftClass)) {
+							// we do nothing
+						} else {
+							if ($(item).find( _this.imgContainer +' img').hasClass(_this.floatRightClass)) {
+								_this.swapColumns( $(item) );
+							} else {
+
+								let styleObj = {
+									'display' : 'block',
+									'width' : 'auto'
+								}
+
+								$(item).find(_this.newsColImg).css(styleObj);
+								$(item).find(_this.newsColContent).css(styleObj);
+
+							}
+						}
+
+					}
+				});
+			}
+		};
+
+
+		/**
+		* Ustawienie maksymalne szerokości dla IMG
+		*/
+		Newses.prototype.setImgDimensions = function(){
+			var _this = this;
+			$(_this.newsBoxContainer).find(_this.imgContainer+' img').each(function(index, item){
+
+				let currentStyle = $(item).attr('style');
+
+				$(item).attr('style',
+					(typeof currentStyle !== 'undefined') ? currentStyle : ''+
+					_this.getImgStyles()
+				);
+			});
+		};
+
+		/**
+		* Przygotowanie styli dla IMG w postaci stringa, aby można było je dodać za pomocą attr() ponieważ css() nie akceptuje wartości '!important'
+		*/
+		Newses.prototype.getImgStyles = function() {
+			let attrValue = '';
+			for(let prop in this.imgStyles){
+				attrValue += prop+':'+this.imgStyles[prop]+'; ';
+			}
+			return attrValue;
+		};
+
+		/**
+		 * Przygotowanie styli dla utworzonego IMG (np. logo czy site thumb)  w postaci stringa, aby można było je dodać za pomocą attr() ponieważ css() nie akceptuje wartości '!important'
+		 */
+		Newses.prototype.getDefaultImgStyles = function() {
+			let attrValue = '';
+			for(let prop in this.defaultImgStyles){
+				attrValue += prop+':'+this.defaultImgStyles[prop]+'; ';
+			}
+			return attrValue;
+		};
+
+
+		/**
+		* Ukrycie / usunięcie obrazka
+		*/
+		Newses.prototype.hideImg = function(thisEl, removeContainer, removeImg ) {
+
+			var removeImg = (typeof removeImg === 'undefined') ? false : removeImg;
+			var removeContainer = (typeof removeContainer === 'undefined') ? false : removeContainer;
+
+			if(removeContainer) {
+				thisEl.parents(thisEl.imgContainer).remove();
+			} else {
+				if( removeImg ) {
+					thisEl.remove();
+				} else {
+					thisEl.hide();
+				}
+			}
+		};
+
+
+		/**
+		* Utworzenie obrazka domyślnego
+		*/
+		Newses.prototype.createDefaultImg = function(){
+			let _this = this;
+
+			_this.createContainerImg();
+
+			$(_this.newsBoxContainer).find(_this.imgContainer).each(function(index, item){
+				if($(item).find('img').length === 0){
+					let html = '';
+					html += '<img class="img-created '+_this.defaultImgClasses+'" src="'+_this.defaultImgSrc+'">';
+					$(item).append(html);
+
+					if( _this.defaultImgStyles !== '' ) {
+						$(item).find('img').attr('style', _this.getDefaultImgStyles());
+					} else {
+						$(item).find('img').attr('style', _this.getImgStyles());
+					}
+
+					if(_this.setDefaultImg === false) {
+
+						let colImg = (
+							(_this.imgContainer === _this.newsColImg)
+							? $(item)
+							: $(item).parents(_this.newsColImg)
+						);
+
+						_this.hideImg( $(colImg), false, true  );
+					}
+				}
+			});
+		};
+
+		/**
+		* Utworzenie kontenera z obrazkiem
+		*/
+		Newses.prototype.createContainerImg = function(){
+			let _this = this;
+
+			$(_this.newsBoxContainer).each(function(index, item){
+				if( $(item).find(_this.imgContainer).length === 0){
+					let html = '';
+
+					html += '<div class="'+_this.imgContainer.substr(1,_this.imgContainer.length )+'"><\/div>';
+
+					if( $(item).find(_this.newsColImg).length === 0) {
+						$(item).find(_this.newsColContent).before(html);
+					} else {
+						$(item).find(_this.newsColImg).append(html);
+					}
+
+				}
+			});
+		};
+
+		/**
+		* Zamiana kolumn treści i obrazka
+		*/
+		Newses.prototype.swapColumns = function(newsBoxContainer) {
+			newsBoxContainer.find(this.newsColImg).insertAfter( newsBoxContainer.find(this.newsColContent) );
+		};
+
+
+		/**
+		*	Przypięcie metody prepareRWD do Listenera oraz jej inicjacja
+		*/
+		Newses.prototype.setRWD = function(){
+			var query;
+			var _this = this;
+			if (typeof(window.matchMedia)!='undefined') {
+				query = window.matchMedia('screen and (max-width:'+_this.defaultBreakpoint+')');
+				query.addListener(function(){
+					_this.prepareRWD(query, _this);
+				});
+				_this.prepareRWD(query, _this);
+			}
+		};
+
+
+		/**
+		* Ustawienie/przywrócenie pozycji obrazka w zależności od rozdzielczości (domyślnie 768px)
+		*/
+		Newses.prototype.prepareRWD = function(q, _this){
+			if (q.matches) {
+				$(_this.newsBoxContainer).each(function(index, item){
+					$(item).find(_this.newsColImg).insertBefore( $(item).find(_this.newsColContent) );
+				});
+			} else {
+				_this.setImgPosition();
+			}
+		};
+
+
+		/**
+		* Zdefiniowanie domyślnego objektu z parametrami
+		* Aby podać WŁASNE PARAMTERY należy użyć zmiennej objNews
+		*/
+		var obj = (typeof objNews === 'undefined') ? undefined : objNews;
+		var news = new Newses(obj);
+
+
+	
+
+        //-------------------------------------------------------------------------
+        //            SET APPROPRIATE HEIGHT ON CONTACT ITEM WHEN ACTIVE
+        //-------------------------------------------------------------------------
+        $(function()
+        {
+            if (!isSetWcagFontSize()) {
+                $('#contact__list').find('.contact__link').on('click', function(e)
+                {
+                    e.preventDefault();
+                    let index = $(this).closest('.contact__item').index();
+                    let contentItems = $('#contact__containers-list').find('.contact__containers-item');
+                    let clickedContent = $(contentItems.get(index));
+                    let clickedContentHeight = clickedContent.outerHeight();
+                    let windowHeight = $(window).height();
+                    let scrollHeight;
+    
+                    clickedContent.toggleClass('contact__containers-item--active');
+    
+                    if (!clickedContent.hasClass('contact__containers-item--active')) {
+                        clickedContent.addClass('contact__containers-item--visible');
+    
+                        clickedContent.stop(true, false).animate({
+                            top:  '100%'
+                        }, 250);
+                    } else {
+    
+                        if ((windowHeight*0.5) < clickedContentHeight) {
+                            clickedContent.find('.contact__scroll-box').height(windowHeight*0.3);
+                            setInternalScroll(clickedContent.find('.contact__scroll-box'));
+                        }
+    
+    
+                        // when scroll is set than get new outer height element (it's differ than starter position)
+                        scrollHeight = windowHeight- $($('#contact__containers-list').find('.contact__containers-item').get(index)).outerHeight();
+    
+                        clickedContent.stop(true, false).animate({
+                            top:  scrollHeight+'px'
+                        }, 250, function() {
+                            clickedContent.addClass('contact__containers-item--visible');
+                        });
+                    }
+                });
+    
+    
+                //-------------------------------------------------------------------------
+                //                      CLEAR FROM STYLE CONTACT ITEM
+                //-------------------------------------------------------------------------
+                $(window).on('resize.clearFixedContact', function()
+                {
+                    $('#contact').find('.contact__containers-item--active')
+                        .css({'top' : '100%'})
+                        .removeClass('contact__containers-item--active contact__containers-item--visible');
+                }).trigger('resize.clearFixedContact');
+                
+                //-------------------------------------------------------------------------
+                //                CLEAR SCROLLBAR AND HEIGHT ON FIXED CONTACT
+                //-------------------------------------------------------------------------
+                enquire.register('screen and (max-width: 768px)', 
+                {
+                    match: function()
+                    {
+                        let contactItems = $('#contact__containers-list').find('.contact__scroll-box');
+                        contactItems.height('');
+                        removeInternalScroll(contactItems);
+                    }
+                });
+            }
+        });
+        
+        
+        //-------------------------------------------------------------------------
+        //                      SET INTERNAL mCustomScrallbar
+        //-------------------------------------------------------------------------
+        function setInternalScroll(box)
+        {
+            box.mCustomScrollbar({
+                scrollInertia: 500, // 0 - wylaczone
+                theme: 'minimal-dark' // minimal
+            });
+        }
+
+        //-------------------------------------------------------------------------
+        //                      REMOVE INTERNAL mCustomScrallbar
+        //-------------------------------------------------------------------------
+        function removeInternalScroll(box)
+        {
+            box.mCustomScrollbar('destroy');
+        }
+        
+    
+
+            //-------------------------------------------------------------------------
+            //                          SET BANNER FREDSEL
+            //-------------------------------------------------------------------------
+            function setBannerCarousel(quantityItem){
+                $('#banners__list').carouFredSel({
+                    scroll: 1,
+                    direction: 'left',
+                    responsive: true,
+                    width: '100%',
+                    height: 'variable', // auto | variable // auto - li width must be set in css / variable - can set height by JS
+                    prev: '#banners .controls__nav-btn--prev',
+                    next: '#banners .controls__nav-btn--next',
+                    // pagination: {
+                    //     container : '#banners .pagination__list',
+                    //     anchorBuilder: function(nr, item){
+                    //         let html='';
+                    //         html+='<li class="pagination__item">';
+                    //         html+='<a class="pagination__link" href="#">';
+                    //         html+='<span class="netadmin--hide">'+nr+'<\/span>';
+                    //         html+='<\/a>';
+                    //         html+='<\/li>';
+                    //         return html;
+                    //     }
+                    // },
+                    auto: {
+                        duration: 500,
+                        timeoutDuration: 5000,
+                        pauseOnHover: true
+                    },
+                    items: {
+                        visible: quantityItem
+                    },
+                    swipe: {
+                        onTouch: true
+                    },
+                });
+            }
+    
+    
+            //-------------------------------------------------------------------------
+            //                          DESTROY BANNER FREDSEL
+            //-------------------------------------------------------------------------
+            function destroyBannerCarousel(){
+                $('#banners__list').trigger('destroy');
+            }
+    
+            //-------------------------------------------------------------------------
+            //              CHANGE VISIBLE ITEM DEPENDS ON SCREEN WIDTH
+            //-------------------------------------------------------------------------
+            $(function(){
+                enquire
+                    .register('screen and (min-width:1201px)',{
+                        match: function(){
+                            setBannerCarousel(4);
+                        }
+                    })
+                    .register('screen and (min-width: 993px) and (max-width:1200px)',{
+                        match: function(){
+                            setBannerCarousel(3);
+                        }
+                    })
+                    .register('screen and (min-width: 569px) and (max-width:992px)',{
+                        match: function(){
+                            setBannerCarousel(2);
+                        }
+                    })
+                    .register('screen and (max-width: 568px)',{
+                        match: function(){
+                            setBannerCarousel(1);
+                        }
+                    })
+            });
+    
+            //-------------------------------------------------------------------------
+            //             SET APPROPRIATE HEIGHT ON BANNER AFTER CREATE
+            //-------------------------------------------------------------------------
+            $(function(){
+                let timer;
+                $(window).on('resize', function(){
+                    clearTimeout(timer);
+                    timer = setTimeout(function(){
+                        let theBiggest = 0;
+    
+                        $('#banners__list').find('.banners__item').each(function(){
+                            let _this = $(this);
+                            if(theBiggest < _this.outerHeight()){
+                                theBiggest = _this.outerHeight();
+                            }
+                        });
+    
+                        $('#banners__list').trigger( 'configuration', {
+                            height: theBiggest
+                        });
+    
+                    }, 250);
+                }).trigger('resize');
+    
+            });
+    
+            //-------------------------------------------------------------------------
+            //                  SET BUTTON TO PLAY/STOP SLIDER
+            //-------------------------------------------------------------------------
+            $(function()
+            {
+                $('#play-toggle__btn').on('click', function()
+                {
+                    let _this = $(this);
+                    let icoClass = _this.find('.fas');
+    
+                    if (icoClass.hasClass('fa-play')) {
+                        $('#banners__list').trigger('play', true);
+                        _this.find('.fas').removeClass('fa-play').addClass('fa-pause');
+                    } else if (icoClass.has('fa-pause')) {
+                        $('#banners__list').trigger('stop');
+                        _this.find('.fas').removeClass('fa-pause').addClass('fa-play');
+                    }
+                });
+            });
+        
+
+    $(function()
+    {
+        if (!isSetWcagFontSize()) {
+            $(window).on('resize.setLeftOffsetOnFooter', function()
+            {
+                if ($(window).width() > 768) {
+                    $('#footer__list').css({'padding-left': $('#contact__list').width()});
+                } else {
+                    $('#footer__list').css({'padding-left': '0'});
+                }
+            }).trigger('resize.setLeftOffsetOnFooter');
+        }
+    });
+    
+
+	//----------------------------------------------------------------------------
+    //  SCROLL TO HOMEPAGE SECTION WHEN CLICK ON MENU LVL_0 ON SUBPAGE
+    //----------------------------------------------------------------------------
+    function goToSectionFromSubpageToHomepage(obj)
+    {
+        /**
+         * PARAMS:
+         *      selectorHashWithoutId // convention '#{sectionName}--{id}'
+         *      additionalOffset
+         *      duration
+         */
+
+        if (obj.selectorHashWithoutId.length == 0) {
+            console.warn('goToSectionFromSubpageToHomepage(): selectorHash is required');
+            return false;
+        }
+
+        if (typeof scrollToElement !== 'function' || typeof defaultValuePolyfill !== 'function') {
+            console.warn('goToSectionFromSubpageToHomepage(): function scrollTo() and defaultValuePolyfill are required');
+            return false;
+        }
+        
+        const substrPositionStart = (obj.selectorHashWithoutId).length;
+        let hash = window.location.hash;
+        let sectionID = hash.substr(substrPositionStart);
+        let duration = defaultValuePolyfill(obj.duration, 500);
+        let navbarHeight = defaultValuePolyfill(obj.additionalOffset, 0);
+        let sectionClass =  '.'+(obj.selectorHashWithoutId.substr(1, obj.selectorHashWithoutId.indexOf('--')-1));
+
+        if (parseInt(sectionID, 10) > 0 ) {
+            let objParam = {
+                element : $(sectionClass).get(sectionID),
+                time : duration,
+                additionalSelectorOffset : navbarHeight
+            }
+            scrollToElement(objParam);
+        }
+    }
+
+    //------------------------------------------------------
+    //		    DETECT SECTION ACCORDING TO MENU ITEM
+    //------------------------------------------------------
+
+    function detectSection(obj){
+        /**
+         * PARAMS:
+         *      sections
+         *      additionalOffset
+         *      menu: {
+         *          idSelector,
+         *          itemsSelector,
+         *          activeClass,
+         *          offsetIndex
+         *      }
+         */
+        let sectionLength = obj.sections.length;
+        let menuItemsLength = $(obj.menu.idSelector).find(obj.menu.itemsSelector).length;
+
+
+        if (sectionLength === 0 ) {
+            console.error('detectSection(): Items not found');
+            return false;
+        }
+
+        if (sectionLength !== menuItemsLength)   {
+            console.group('detectSection(): menu items and sections are not equal');
+            console.warn('menu items: '+ menuItemsLength);
+            console.warn('sections: '+ sectionLength);
+            console.groupEnd();
+        }
+
+        obj.sections.each(function(index)
+        {
+            let currentSection = $(this);
+            let additionalOffset = (typeof obj.additionalOffset === 'undefined') ? 0 : obj.additionalOffset;
+            let offsetTopSection = currentSection.offset().top - additionalOffset;
+            let offsetBottomSection = offsetTopSection + currentSection.outerHeight();
+            let scrollBarPosition = $(window).scrollTop()+1;
+
+
+            if (
+                scrollBarPosition > offsetTopSection &&
+                scrollBarPosition <= offsetBottomSection
+            ) {
+                let itemsMenu =  $(obj.menu.idSelector).find(obj.menu.itemsSelector);
+                let currentIndexMenu = index - obj.menu.offsetIndex;
+
+                // remove all active class on menu
+                itemsMenu.removeClass(obj.menu.activeClass);
+
+                // add active class on menu regardless to current section
+                $(itemsMenu.get(currentIndexMenu)).addClass(obj.menu.activeClass);
+            }
+
+
+            // clear class when scroll is upper than first detect section
+            if (
+                index == 0 &&
+                scrollBarPosition < offsetTopSection
+            ) {
+                itemsMenu =  $(obj.menu.idSelector).find(obj.menu.itemsSelector);
+
+                // remove all active class on menu
+                itemsMenu.removeClass(obj.menu.activeClass);
+            }
+        });
+    }
+
+    //------------------------------------------------------
+    //					SCROLL TO SECTION
+    //------------------------------------------------------
+    function scrollToElement(obj) {
+        /**
+         * PARAMS:
+         *  element
+         *  time
+         *  additionalSelectorOffset
+         *  callback
+         */
+        let el = $(obj.element);
+        let time = defaultValuePolyfill(obj.time, 500);
+
+        if( el.length == 0) return false;
+
+
+        let additionalSectionOffset = defaultValuePolyfill(obj.additionalSelectorOffset, 0);
+        let callback = defaultValuePolyfill(obj.callback, null);
+        let offsetElement = el.offset().top - additionalSectionOffset;
+
+        $('html, body').clearQueue().animate({
+            scrollTop: offsetElement
+        }, time, callback);
+    }
+
+
+    //------------------------------------------------------
+	//					DETECT SECTION
+	//------------------------------------------------------
+
+    function detectSectionOnce(arrSection,active ,additionalOffset, startDetect) {
+
+        let addOffset = (typeof additionalOffset === 'undefined') ? 0 : additionalOffset;
+        let start = (typeof startDectect === 'undefined') ? true : startDetect;
+        let activeClass = (typeof active === 'undefined') ? 'active' : active;
+
+        $(arrSection).each(function(){
+            let offsetTop = $(this).offset().top;
+           
+            if( startDetect ) {
+                offsetTop -= $(window).height();
+            } else {
+                offsetTop -= addOffset;
+            }
+
+            if( $(window).scrollTop() > offsetTop ) {
+                $(this).addClass(activeClass);
+            }
+        });
+    }
+
+    //------------------------------------------------------
+    //     SET THE SAME HEIGHT OR GET THE BIGGEST ELEMENT
+    //------------------------------------------------------
+    function theSameHeight(obj)
+    {
+        /**
+        * items             : Wszystkie elemenety, po których będzie szła pętla aby znaleźć największego z nich 
+        * defaultHeight     : Minimalna wysokość elementu 
+        * item              : Element DOM któremu ma zostać przypisana największa wartość (jeżeli undefined to przypisywane jest wszystkim)
+        * getValue          : Jeżeli true to zwraca wartość  
+        */
+
+        let items = obj.items;
+        let theBiggest = (typeof obj.defaultHeight === 'undefined') ? 0 : obj.defaultHeight;
+        let item = (typeof obj.item === 'undefined') ? false : obj.item;
+        let getValue = (obj.getValue === true) ? true : false;
+        let timer;
+
+        if (items.length === 0) {
+            return false;
+        }
+
+        // clear value
+        if (item.length > 0 ) {
+            item.height('');
+        } else {
+            items.height('');
+        }
+        
+        // search the biggest value
+        items.each(function(index, item){
+            let _this = $(this);
+            if (theBiggest < _this.outerHeight()) {
+                theBiggest = _this.outerHeight();
+            }
+        });
+
+        // if param set then return value
+        if (getValue) {
+            return theBiggest;
+        }
+
+        // set value
+        if (item.length > 0 ) {
+            item.height(theBiggest);
+        } else {
+            items.height(theBiggest);
+        }
+    }
+
+
+    //------------------------------------------------------
+    //		        SET TRANSITION TO ELEMENT
+    //------------------------------------------------------
+    function setTransition(arrObjs)
+    {
+        arrObjs.forEach(function(item)
+        {
+            $(item.el).css({'transition': item.properties});
+        });
+    }
+
+
+    //------------------------------------------------------
+    //	    REMOVE ANCHOR FORM LINK WHEN IMG IS A FILE
+    //------------------------------------------------------
+    function removeAnchorWhenImgIsFile(obj)
+    {
+        /**
+         * PARAMS:
+         *   selectorLink,
+         *   arrFileType
+         */
+
+        let arrFileType;
+        let arrFileTypeDefault = ['jpg', 'jpeg', 'png', 'gif'];
+
+        if (typeof obj.arrFileType !== 'undefined') {
+            if (Array.isArray(obj.arrFileType) === false) {
+                console.warn('removeAnchorWhenImgIsFile(): parameter arrFileType must be an array');
+                return false;
+            }
+            arrFileType = obj.arrFileType;
+        } else {
+            arrFileType = arrFileTypeDefault;
+        }
+
+        if (typeof obj.selectorLink === 'undefined') {
+            console.warn('removeAnchorWhenImgIsFile(): selector not found');
+            return false;
+        }
+
+
+        $(obj.selectorLink).each(function()
+        {
+            let _this = $(this);
+            let _attr = _this.attr('href');
+
+            arrFileType.forEach(function(item, index)
+            {
+
+                if (_attr.search(item) !== -1) {
+                    _this.removeAttr('href');
+                }
+            });
+        });
+    }
+
+
+    //------------------------------------------------------
+    //					DEFAULT VALUE
+    //------------------------------------------------------
+    function defaultValuePolyfill(value, defaultValue)
+    {
+        return (typeof value !== 'undefined' ) ? value : defaultValue;
+    }
+
+
+    //-------------------------------------------------------------------------
+    //                          SWAP COLUMN
+    //-------------------------------------------------------------------------
+    function swapContent(obj)
+    {
+        /**
+         * PARAMS:
+         *  sourceParent
+         *  sourceElement
+         *  target
+         *  breakpoint
+         */
+
+        enquire.register('screen and (max-width:'+obj.breakpoint+')',
+            {
+                match: function()
+                {
+                    $(obj.sourceElement).appendTo($(obj.target));
+                    $(obj.sourceParent).addClass('netadmin--hide');
+                },
+                unmatch: function()
+                {
+                    $(obj.sourceElement).appendTo($(obj.sourceParent));
+                    $(obj.sourceParent).removeClass('netadmin--hide');
+                }
+            });
+    }
+    
+    $(function(){
+        const tables = $('.section, .contact').find('table').not('.table .table');
+        enquire.register('screen and (max-width: 992px)', {
+            match: function(){
+                tables.each(function(index,item){
+                    $(item).wrap('<div class="table-responsive"></div>')
+                });
+            },
+            
+            unmatch: function(){
+                tables.each(function(index,item){
+                    $(item).unwrap();
+                });
+            }
+        
+        });
+    });
+	
+//--><!]]></SCRIPT>
+<NOSCRIPT><h3>Twoja przeglądarka internetowa ma wyłączoną obsługę języka JavaScript. Takie ustawienie może powodować problemy z poprawną obsługą niniejszej strony.</h3></NOSCRIPT>
+</BODY>
+</HTML>
