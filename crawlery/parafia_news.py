@@ -30,11 +30,3 @@ class NewsSpider(scrapy.Spider):
         next_post = response.css('div.nav-previous a::attr("href")').get()
         if next_post is not None:
             yield response.follow(next_post, self.parse_next)
-
-
-
-
-
-
-
-
